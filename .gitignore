@@ -20,7 +20,5 @@ Thumbs.db
 # Documents folder, not needed
 docs
 
-src/js/vanillajs/algorithms
-src/js/vanillajs/datastructures
-src/js/vanillajs/mathematics
+src/js/vanillajs/DEFAULTS
 src/js/vanillajs/OLD
