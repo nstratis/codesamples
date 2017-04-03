@@ -11,7 +11,7 @@
  */
 app.mainVw = aim.view.extend(function($super){
 	"use strict";
-
+	// Set the name reference for the object
 	this.NAME = 'mainVw';
 
 	/**
@@ -63,10 +63,12 @@ app.mainVw = aim.view.extend(function($super){
 		if(!aim.agent.mobile){
 			this.view.addClass('no-tchdev');
 		} else {
-			// Check if this is a Win Platform
+			// Check if this is a Win Platform, simple utilization of the of aim.agent
 			if(aim.agent.platform === 'Win32' || aim.agent.platform === 'Win64'){
+				// Add the no touch class to enable rollovers
 				this.view.addClass('no-tchdev');
 			} else {
+				// Add the tch class to enforce that this is a touch device
 				this.view.addClass('tchdev');
 			}
 		}
