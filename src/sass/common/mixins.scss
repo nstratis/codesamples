@@ -1,0 +1,142 @@
+@mixin user-select($select)
+{
+-webkit-user-select:$select !important;
+-moz-user-select:$select !important;
+-ms-user-select:$select !important;
+user-select:$select !important;
+}
+
+@mixin text-shadow($col)
+{
+text-shadow: 0px 1px 2px $col;
+}
+
+@mixin border-radius($value)
+{
+border-top-left-radius:$value;
+border-bottom-left-radius:$value;
+border-top-right-radius:$value;
+border-bottom-right-radius:$value;
+}
+
+@mixin border-radius-right($value)
+{
+border-top-right-radius:$value;
+border-bottom-right-radius:$value;
+}
+
+
+@mixin box-sizing($size)
+{
+-moz-box-sizing:$size;
+-webkit-box-sizing:$size;
+box-sizing:$size;
+}
+
+@mixin box-shadow($x, $y, $blur)
+{
+-webkit-box-shadow: $x $y $blur rgba(0, 0, 0, .2);
+-moz-box-shadow: $x $y $blur rgba(0, 0, 0, .2);
+box-shadow: $x $y $blur rgba(0, 0, 0, .2);
+}
+
+@mixin no-box-shadow()
+{
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
+}
+
+@mixin box-shadow-ext($x, $y, $blur, $strength, $colour)
+{
+-webkit-box-shadow: $x $y $blur $strength $colour;
+-moz-box-shadow: $x $y $blur $strength $colour;
+box-shadow: $x $y $blur $strength $colour;
+}
+
+@mixin grad-2($col1, $per1, $col2, $per2, $hex1, $hex2)
+{
+background:$col1;
+background:-moz-linear-gradient(top, $col1 $per1, $col2 $per2);
+background:-webkit-linear-gradient(top, $col1 $per1, $col2 $per2);
+background:linear-gradient(to bottom, $col1 $per1, $col2 $per2);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$hex1', endColorstr='$hex2',GradientType=0 );
+}
+
+@mixin grad-3($col1, $per1, $col2, $per2, $col3, $per3, $hex1, $hex2)
+{
+background:$col1;
+background:-moz-linear-gradient(top, $col1 $per1, $col2 $per2, $col3 $per3);
+background:-webkit-linear-gradient(top, $col1 $per1, $col2 $per2, $col3 $per3);
+background:linear-gradient(to bottom, $col1 $per1, $col2 $per2, $col3 $per3);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$hex1', endColorstr='$hex2',GradientType=0 );
+}
+
+@mixin filter-opacity($value)
+{
+-moz-opacity:$value;
+opacity:$value;
+filter:alpha(opacity=($value*100));
+}
+
+@mixin transit($props, $time, $ease)
+{
+-moz-transition:$props $time $ease;
+-webkit-transition:$props $time $ease;
+transition:$props $time $ease;
+}
+
+@mixin transitnoease($props, $time)
+{
+-moz-transition:$props $time;
+-webkit-transition:$props $time;
+transition:$props $time;
+}
+
+
+@mixin get-icon($colour)
+{
+background:url($uiAssets + 'desktop_button_' + $colour + '.png') no-repeat;
+background-size:100%;
+background-position:center bottom;
+}
+
+@mixin arrow-right($a, $b, $c, $colour)
+{
+border-bottom:$a solid transparent;
+border-top:$b solid transparent;
+border-left:$c solid $colour;
+border-right:none;
+}
+
+@mixin arrow-left($a, $b, $c, $colour)
+{
+border-bottom:$a solid transparent;
+border-top:$b solid transparent;
+border-right:$c solid $colour;
+border-left:none;
+}
+
+@mixin arrow-down($a, $b, $c, $colour)
+{
+border-left:$a solid transparent;
+border-right:$b solid transparent;
+border-top:$c solid $colour;
+border-bottom:none;
+}
+
+@mixin arrow-up($a, $b, $c, $colour)
+{
+border-left:$a solid transparent;
+border-right:$b solid transparent;
+border-bottom:$c solid $colour;
+border-top:none;
+}
+
+@mixin antialias()
+{
+font-smoothing: antialiased;
+-moz-font-smoothing: antialiased;
+-webkit-font-smoothing: antialiased;
+-webkit-font-smoothing: subpixel-antialiased;
+}

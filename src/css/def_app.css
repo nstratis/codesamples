@@ -1,0 +1,278 @@
+/*
+ * DEFAULT COLOURS, SIZES AND PATHS
+ * This is the base colour palette for the application
+ */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:focus {
+  outline-offset: 0px;
+  outline: none; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+label, h1, h2, h3, span, p, ul, li {
+  -webkit-touch-callout: default;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important; }
+
+::-webkit-input-placeholder {
+  color: rgba(40, 53, 51, 0.5); }
+
+:-moz-placeholder {
+  color: rgba(40, 53, 51, 0.5);
+  opacity: 1; }
+
+::-moz-placeholder {
+  color: rgba(40, 53, 51, 0.5);
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: rgba(40, 53, 51, 0.5); }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  color: #252525; }
+
+#wrapper,
+.modal-layer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/*
+ * Standard Wrapper size and outer container
+ */
+#wrapper {
+  position: fixed;
+  min-width: 300px; }
+
+.modal-layer {
+  position: absolute; }
+
+/*
+ * Modal overlay layer for panels that
+ * appear in a modal layer in the application
+ */
+.modal-layer {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  display: none; }
+
+.modal-layer.visible {
+  display: block !important; }
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important; }
+
+/*
+ * Application Modal preloader layer, overlays all content to ensure
+ * no UI elements can be utilized for the single stream data loading
+ */
+#app-preloader .prlodr {
+  position: absolute;
+  width: 180px;
+  left: 50%;
+  top: 50%;
+  margin: -35px 0 0 -90px;
+  text-align: center;
+  padding: 3px;
+  background: #fff;
+  border: 1px solid #EDF1EE;
+  text-align: center;
+  overflow: hidden; }
+  #app-preloader .prlodr .ldr-anime {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url("../assets/preloader_anime.gif"); }
+  #app-preloader .prlodr .ldr-bar {
+    width: 0%;
+    height: 4px;
+    background: #28bbc8; }
+  #app-preloader .prlodr span {
+    display: block;
+    padding: 3px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    background: #EDF1EE; }
+
+/*
+ * Header, Footer and Application Mid sections
+ */
+header.main, div.main, footer.main {
+  position: absolute;
+  width: 100%; }
+
+header.main {
+  height: 64px;
+  top: 0px;
+  background-color: #3d3d3d; }
+  header.main .logo {
+    width: 171px;
+    height: 64px;
+    background: url("../assets/app/logo_halfords.png") no-repeat; }
+
+nav.menu {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  top: 64px;
+  text-align: center;
+  background-color: #EDF1EE; }
+  nav.menu ul {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: left; }
+    nav.menu ul li {
+      text-align: left;
+      display: inline-block;
+      vertical-align: top;
+      color: #252525;
+      line-height: 30px;
+      padding: 0 10px 0 0; }
+
+div.main {
+  top: 94px;
+  bottom: 30px;
+  overflow-y: auto; }
+  div.main div.cntr {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px; }
+
+footer.main {
+  height: 30px;
+  bottom: 0;
+  background-color: #3d3d3d;
+  color: #fff;
+  line-height: 30px; }
+  footer.main span {
+    margin-left: 10px; }
+
+/*
+ * Headers and paragraph styles
+ */
+h1 {
+  font-size: 28px;
+  color: #3d3d3d;
+  margin: 10px 0 10px 0; }
+
+h2 {
+  font-size: 20px;
+  color: #3d3d3d;
+  margin: 10px 0 10px 0; }
+
+p {
+  font-size: 16px;
+  margin: 5px 0 5px 0; }
+
+/*
+ * Nav above the table with sort coms
+ */
+nav.sorter {
+  margin-bottom: 20px; }
+  nav.sorter label {
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px; }
+  nav.sorter select {
+    height: 30px; }
+
+/*
+ * Bike display grid main styles
+ */
+table.products {
+  width: 100%;
+  text-align: left; }
+  table.products thead th {
+    height: 30px;
+    background-color: #3d3d3d;
+    color: #fff;
+    padding: 10px; }
+  table.products tbody td {
+    padding: 10px;
+    height: 30px; }
+    table.products tbody td img {
+      width: 100px;
+      height: auto; }
+  table.products td.code, table.products th.code {
+    width: 100px;
+    font-weight: bold; }
+
+/*
+ * smartphones, iPhone, portrait 480x320 phones
+ */
+@media only screen {
+  /*
+   * smartphones, iPhone, portrait 480x320 phones
+   */
+  /*
+   * Samsung Duo (portrait)
+   * Iphone 6 (portrait)
+   * Nokia Lumia (portrait)
+   * Lenovo smartphone (portrait)
+   *
+   * smartphones, iPhone, portrait 480x320 phones
+   */
+  /*
+   * Samsung Duo (landscape)
+   * Nokia Lumia (landscape)
+   * Kindle Fire (portrait)
+   *
+   * portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
+   */
+  /*
+   * Iphone 6 (landscape)
+   * Lenovo smartphone (landscape)
+   *
+   * portrait tablets, portrait iPad, landscape e-readers,
+   * landscape 800x480 or 854x480 phones
+   */
+  /*
+   * Samsung Galaxy Tab 10 (portrait)
+   * IPad Mini (portrait)
+   * Kindle Fire (landscape)
+   *
+   * portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+   */
+  /*
+   * tablet,
+   * landscape iPad,
+   * lo-res laptops ands desktops
+   */
+  /*
+   * IPad Mini (landscape)
+   * big landscape tablets, laptops, and desktops
+   */
+  /*
+   * Samsung Galaxy Tab 10 (landscape)
+   * hi-res laptops and desktops
+   */ }
+
+/*# sourceMappingURL=def_app.css.map */

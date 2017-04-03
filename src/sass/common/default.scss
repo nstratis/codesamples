@@ -1,0 +1,88 @@
+@charset "utf-8";
+*
+{
+margin:0;
+padding:0;
+-webkit-tap-highlight-color: transparent !important;
+-webkit-focus-ring-color:rgba(255,255,255,0) !important;
+@include box-sizing(border-box);
+}
+
+*:focus
+{
+outline-offset:0px;
+outline:none;
+}
+
+button::-moz-focus-inner
+{
+padding:0;
+border:0;
+}
+
+label, h1, h2, h3, span, p, ul, li
+{
+-webkit-touch-callout:default;
+@include user-select(none);
+}
+
+::-webkit-input-placeholder { color:$placeholder; }
+:-moz-placeholder { color:$placeholder; opacity:1; }
+::-moz-placeholder { color:$placeholder; opacity:1; }
+:-ms-input-placeholder {color:$placeholder; }
+
+html,
+body
+{
+width:100%;
+height:100%;
+overflow:hidden;
+}
+
+body
+{
+font-family:Helvetica, Arial, sans-serif;
+background:$white;
+font-size:$fbase;
+color:$drkgrey;
+}
+
+#wrapper,
+.modal-layer
+{
+width:100%;
+height:100%;
+overflow:hidden;
+}
+
+/*
+ * Standard Wrapper size and outer container
+ */
+#wrapper
+{
+position:fixed;
+min-width:300px;
+}
+
+.modal-layer
+{
+position:absolute;
+}
+
+/*
+ * Modal overlay layer for panels that
+ * appear in a modal layer in the application
+ */
+.modal-layer
+{
+background:rgba(0,0,0,0.4);
+z-index:9999;
+display:none;
+}
+
+.modal-layer.visible
+{
+display:block !important;
+}
+
+.no-select { -webkit-touch-callout: none; @include user-select(none); }

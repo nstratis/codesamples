@@ -1,0 +1,81 @@
+
+/*
+ * Headers and paragraph styles
+ */
+h1
+{
+font-size:$flrg;
+color:$medlgtgrey;
+margin:10px 0 10px 0;
+}
+
+h2
+{
+font-size:$fmed;
+color:$medlgtgrey;
+margin:10px 0 10px 0;
+}
+
+p
+{
+font-size:$fbase;
+margin:5px 0 5px 0;
+}
+
+/*
+ * Nav above the table with sort coms
+ */
+nav.sorter
+{
+margin-bottom:20px;
+  label
+  {
+  height:30px;
+  line-height:30px;
+  margin-right:10px;
+  }
+  select
+  {
+  height:30px;
+  }
+}
+
+/*
+ * Bike display grid main styles
+ */
+table.products
+{
+width:100%;
+text-align:left;
+
+  thead
+  {
+    th
+    {
+    height:30px;
+    background-color:$medlgtgrey;
+    color:$white;
+    padding:10px;
+    }
+  }
+
+  tbody
+  {
+    td
+    {
+    padding:10px;
+    height:30px;
+      img
+      {
+      width:100px;
+      height:auto;
+      }
+    }
+  }
+
+  td.code, th.code
+  {
+  width:100px;
+  font-weight:bold;
+  }
+}

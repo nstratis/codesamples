@@ -1,0 +1,26 @@
+*.project
+*.vscode
+*.sass-cache
+
+# Node modules
+node_modules
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Documents folder, not needed
+docs
+
+src/js/vanillajs/algorithms
+src/js/vanillajs/datastructures
+src/js/vanillajs/mathematics
+src/js/vanillajs/OLD

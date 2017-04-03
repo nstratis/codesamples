@@ -1,0 +1,346 @@
+/*
+ * This is the CSS compilation for the main application
+ * this includes all component styling
+ */
+/*
+ * DEFAULT COLOURS, SIZES AND PATHS
+ * This is the base colour palette for the application
+ */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:focus {
+  outline-offset: 0px;
+  outline: none; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+label, h1, h2, h3, span, p, ul, li {
+  -webkit-touch-callout: default;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important; }
+
+::-webkit-input-placeholder {
+  color: rgba(40, 53, 51, 0.5); }
+
+:-moz-placeholder {
+  color: rgba(40, 53, 51, 0.5);
+  opacity: 1; }
+
+::-moz-placeholder {
+  color: rgba(40, 53, 51, 0.5);
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: rgba(40, 53, 51, 0.5); }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  color: #252525; }
+
+#wrapper,
+.modal-layer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/*
+ * Standard Wrapper size and outer container
+ */
+#wrapper {
+  position: fixed;
+  min-width: 300px; }
+
+.modal-layer {
+  position: absolute; }
+
+/*
+ * Modal overlay layer for panels that
+ * appear in a modal layer in the application
+ */
+.modal-layer {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  display: none; }
+
+.modal-layer.visible {
+  display: block !important; }
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important; }
+
+/*
+ * SEND BUTTON FORMAT - This is the standard style for the submit
+ * button, it will auto size based on the label size
+ */
+.send_btn {
+  width: 133px;
+  height: 50px;
+  background: #87c3ff;
+  border: none;
+  color: #fff;
+  margin-top: 12px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+/*
+ * COMMENT BOX - The default styles for the comment box, there are
+ * effectively 2 styles, one with a white background, the other grey
+ */
+.msg {
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #EDF1EE;
+  color: #252525; }
+
+.msg:focus {
+  border: 1px solid #87c3ff; }
+
+/*
+ * MAIN CONTAINERS
+ */
+#message-display,
+#review-container {
+  position: relative;
+  margin: 35px 35px 0 35px; }
+
+#review-container {
+  margin-top: 75px;
+  margin-bottom: 35px; }
+
+/*
+ * LIST AND SUB CONTAINER SECTIONS
+ * These are the base layouts for main elements on the page
+ */
+.mncont, .newrev {
+  position: relative; }
+
+.newrev {
+  padding: 50px 0 0 0;
+  border: none;
+  border-top: 1px solid #EDF1EE;
+  text-align: right; }
+  .newrev legend {
+    width: 320px;
+    margin-left: calc(50% - 160px);
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px; }
+  .newrev .newrev_btn {
+    width: 206px;
+    margin-bottom: 35px; }
+
+/*
+ * LIST CONTAINER - default styles
+ */
+.revlst,
+.commuser {
+  position: relative;
+  list-style-type: none; }
+
+.revlst_elem {
+  margin-bottom: 48px; }
+
+/*
+ * INDENTATION - No real guide for indentations
+ * are all child elements indented the same?
+ * or is each subsequent child further indented which would pose
+ * display issues in scalability
+ */
+.commuser {
+  margin-left: 125px;
+  margin-top: 55px; }
+
+.comlst_write {
+  text-align: right; }
+
+.revlst_title {
+  color: #87c3ff;
+  font-size: 16px; }
+  .revlst_title .duration {
+    color: #252525;
+    margin-left: 12px;
+    font-weight: normal; }
+
+/*
+ * Custom Style colour for the message box, non editable
+ */
+.revlst_message {
+  position: relative;
+  margin: 35px 0 12px 0;
+  background-color: #EDF1EE; }
+
+/*
+ * Arrow for the message box
+ */
+.revlst_message::before {
+  width: 0px;
+  height: 0px;
+  background: none;
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 25px;
+  border-bottom: 0px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #EDF1EE;
+  border-right: none; }
+
+.rev_input {
+  position: relative; }
+
+.msg_arrow {
+  position: absolute;
+  background: url("../assets/comments/border_triang.png");
+  display: block;
+  width: 22px;
+  height: 21px;
+  top: -20px;
+  left: 25px; }
+
+.revlst_btn {
+  width: 78px;
+  height: 36px;
+  border: 1px solid #87c3ff;
+  background: #87c3ff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.commuser .revlst_btn {
+  border: 1px solid #a8d1fa;
+  background: #fff;
+  color: #87c3ff; }
+
+.revlst_likes {
+  margin-left: 12px;
+  font-size: 14px; }
+
+/*
+ * smartphones, iPhone, portrait 480x320 phones
+ */
+@media only screen {
+  /*
+   * smartphones, iPhone, portrait 480x320 phones
+   */ }
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+  #message-display,
+  #review-container {
+    position: relative;
+    margin: 25px 25px 0 25px; }
+
+  .commuser {
+    margin-left: 36px !important; }
+
+  .newrev legend {
+    position: absolute;
+    width: auto;
+    margin: 0;
+    top: 36px;
+    text-align: left; }
+
+  .rev_input {
+    margin-top: 48px; }
+
+  .newrev_btn.send_btn, .comlst_send.send_btn {
+    width: 100%; } }
+@media only screen {
+  /*
+   * Samsung Duo (portrait)
+   * Iphone 6 (portrait)
+   * Nokia Lumia (portrait)
+   * Lenovo smartphone (portrait)
+   *
+   * smartphones, iPhone, portrait 480x320 phones
+   */ }
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #message-display,
+  #review-container {
+    position: relative;
+    margin: 25px 25px 0 25px; }
+
+  .commuser {
+    margin-left: 36px !important; }
+
+  .newrev legend {
+    position: absolute;
+    width: auto;
+    margin: 0;
+    top: 36px;
+    text-align: left; }
+
+  .rev_input {
+    margin-top: 48px; }
+
+  .newrev_btn.send_btn, .comlst_send.send_btn {
+    width: 100%; } }
+@media only screen {
+  /*
+   * Samsung Duo (landscape)
+   * Nokia Lumia (landscape)
+   * Kindle Fire (portrait)
+   *
+   * portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
+   */
+  /*
+   * Iphone 6 (landscape)
+   * Lenovo smartphone (landscape)
+   *
+   * portrait tablets, portrait iPad, landscape e-readers,
+   * landscape 800x480 or 854x480 phones
+   */
+  /*
+   * Samsung Galaxy Tab 10 (portrait)
+   * IPad Mini (portrait)
+   * Kindle Fire (landscape)
+   *
+   * portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+   */
+  /*
+   * tablet,
+   * landscape iPad,
+   * lo-res laptops ands desktops
+   */
+  /*
+   * IPad Mini (landscape)
+   * big landscape tablets, laptops, and desktops
+   */
+  /*
+   * Samsung Galaxy Tab 10 (landscape)
+   * hi-res laptops and desktops
+   */ }
+
+/*# sourceMappingURL=def_comments.css.map */
