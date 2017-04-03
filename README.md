@@ -13,3 +13,11 @@ The folder structure is as follows:
 the AIMjs MVCS core framework created at AV Digital Media Ltd.
 
 /src - The is the main source folder will all HTML, CSS, SASS, AND JavaScript
+
+## Include Sample
+
+1. Sample ES5 React JS Components
+2. Sample ES6 React JS Components
+3. Vanilla JS Basic which includes straight forward algorithms
+4. Node JS Samples
+5. Demonstration of SASS Utilization
