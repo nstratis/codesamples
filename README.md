@@ -11,3 +11,5 @@ The folder structure is as follows:
 
 /libs - The is the library folder containing the REACTjs component files and
 the AIMjs MVCS core framework created at AV Digital Media Ltd.
+
+/src - The is the main source folder will all HTML, CSS, SASS, AND JavaScript
