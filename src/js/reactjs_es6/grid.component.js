@@ -19,22 +19,22 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 (function () {
 
   /**
-   * @class BikeGrid
-   * @description A sample React JS BikeGrid Component
+   * @class ProductGrid
+   * @description A sample React JS ProductGrid Component
    */
-  var BikeGrid = function (_React$Component) {
-    _inherits(BikeGrid, _React$Component);
+  var ProductGrid = function (_React$Component) {
+    _inherits(ProductGrid, _React$Component);
 
     /**
      * @function constructor
-     * @memberof BikeGrid
-     * @description The constructor function for the BikeGrid component
+     * @memberof ProductGrid
+     * @description The constructor function for the ProductGrid component
      */
-    function BikeGrid(props) {
-      _classCallCheck(this, BikeGrid);
+    function ProductGrid(props) {
+      _classCallCheck(this, ProductGrid);
 
       // Set the state for the board
-      var _this = _possibleConstructorReturn(this, (BikeGrid.__proto__ || Object.getPrototypeOf(BikeGrid)).call(this, props));
+      var _this = _possibleConstructorReturn(this, (ProductGrid.__proto__ || Object.getPrototypeOf(ProductGrid)).call(this, props));
       // All constructors require the super() to be executed
 
 
@@ -48,7 +48,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /**
      * @function componentWillReceiveProps
-     * @memberof BikeGrid
+     * @memberof ProductGrid
      * @description The lifecyle method to determine if props are received
      */
     //componentWillReceiveProps(nextProps){
@@ -57,7 +57,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /**
      * @function shouldComponentUpdate
-     * @memberof BikeGrid
+     * @memberof ProductGrid
      * @description The lifecyle shouldComponentUpdate method executed after the render
      */
     //shouldComponentUpdate(){
@@ -68,7 +68,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /**
      * @function componentWillUpdate
-     * @memberof BikeGrid
+     * @memberof ProductGrid
      * @description The lifecyle method straight after the shouldComponentUpdate
      */
     //componentWillUpdate(nextProps, nextState){
@@ -78,7 +78,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /**
      * @function componentDidUpdate
-     * @memberof BikeGrid
+     * @memberof ProductGrid
      * @description The lifecyle didMount method executed after the render
      */
     //componentDidUpdate(prevProps, prevState){
@@ -87,7 +87,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /**
      * @function componentWillMount
-     * @memberof BikeGrid
+     * @memberof ProductGrid
      * @description The lifecyle componentWillMount method executed before mounting
      */
     //componentWillMount(){
@@ -96,7 +96,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /**
      * @function componentDidMount
-     * @memberof BikeGrid
+     * @memberof ProductGrid
      * @description The lifecyle didMount method executed after the render
      */
     //componentDidMount(){
@@ -105,7 +105,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /**
      * @function componentWillUnmount
-     * @memberof BikeGrid
+     * @memberof ProductGrid
      * @description The lifecyle will unmount method
      */
     //componentWillUnmount(){
@@ -114,12 +114,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /**
      * @function destroy
-     * @memberof BikeGrid
+     * @memberof ProductGrid
      * @description Destroy the component
      */
 
 
-    _createClass(BikeGrid, [{
+    _createClass(ProductGrid, [{
       key: 'destroy',
       value: function destroy() {
         // Unmount the component from the dom
@@ -129,7 +129,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
       /**
        * @public
        * @function onChange
-       * @memberof BikeGrid
+       * @memberof ProductGrid
        * @description Handle the change event for the filter
        * @param {object} e - The event object
        */
@@ -144,8 +144,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
       /**
        * @function render
-       * @memberof BikeGrid
-       * @description Render the BikeGrid component
+       * @memberof ProductGrid
+       * @description Render the ProductGrid component
        */
 
     }, {
@@ -257,46 +257,46 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
       }
     }]);
 
-    return BikeGrid;
+    return ProductGrid;
   }(React.Component);
 
   /**
    * @function propTypes
-   * @memberof BikeGrid
+   * @memberof ProductGrid
    * @description Strong type the property expectations
    */
 
 
-  BikeGrid.propTypes = {
+  ProductGrid.propTypes = {
     data: React.PropTypes.array,
     classArray: React.PropTypes.array
   };
 
   /**
    * @function defaultProps
-   * @memberof BikeGrid
+   * @memberof ProductGrid
    * @description Set the default props for the component in the event they
    * were not define in the creation
    */
-  // BikeGrid.defaultProps = {
+  // ProductGrid.defaultProps = {
   //
   // }
 
   /**
    * @namespace app
-   * @function bikegrid
-   * @description The aim.BikeGrid reference object for creating new instances
+   * @function ProductGrid
+   * @description The aim.ProductGrid reference object for creating new instances
    */
-  app.bikegrid = function () {
+  app.productGrid = function () {
     return {
       create: function create(parent, options) {
         // // Get the parent element from the dom
         var pNode = document.getElementById(parent);
         // // Add the default class name to the parent
-        var grid = React.createElement(BikeGrid, { data: options.data, classArray: options.classArray, parent: parent });
+        var grid = React.createElement(ProductGrid, { data: options.data, classArray: options.classArray, parent: parent });
         // Render the menu in the dom
         grid = ReactDOM.render(grid, pNode);
-        // // Return the BikeGrid object for referencing
+        // // Return the ProductGrid object for referencing
         return grid;
       }
     };

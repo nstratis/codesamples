@@ -30,9 +30,8 @@ app.mainVw = aim.view.extend(function($super){
 	 * @memberof mainVw
 	 */
 	this.crteGrid = function(data, classArray){
-
-		app.bikegrid.create('grid-container', {data:data.items, classArray:classArray});
-
+		// Initialize the product grid
+		this.objs.grid = app.productGrid.create('grid-container', {data:data.items, classArray:classArray});
 	};
 
 	/**

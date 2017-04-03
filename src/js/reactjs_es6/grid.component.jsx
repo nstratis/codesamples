@@ -9,15 +9,15 @@
 (function(){
 
 /**
- * @class BikeGrid
- * @description A sample React JS BikeGrid Component
+ * @class ProductGrid
+ * @description A sample React JS ProductGrid Component
  */
-class BikeGrid extends React.Component {
+class ProductGrid extends React.Component {
 
   /**
    * @function constructor
-   * @memberof BikeGrid
-   * @description The constructor function for the BikeGrid component
+   * @memberof ProductGrid
+   * @description The constructor function for the ProductGrid component
    */
   constructor(props){
     // All constructors require the super() to be executed
@@ -32,7 +32,7 @@ class BikeGrid extends React.Component {
 
   /**
    * @function componentWillReceiveProps
-   * @memberof BikeGrid
+   * @memberof ProductGrid
    * @description The lifecyle method to determine if props are received
    */
   //componentWillReceiveProps(nextProps){
@@ -41,7 +41,7 @@ class BikeGrid extends React.Component {
 
   /**
    * @function shouldComponentUpdate
-   * @memberof BikeGrid
+   * @memberof ProductGrid
    * @description The lifecyle shouldComponentUpdate method executed after the render
    */
   //shouldComponentUpdate(){
@@ -52,7 +52,7 @@ class BikeGrid extends React.Component {
 
   /**
    * @function componentWillUpdate
-   * @memberof BikeGrid
+   * @memberof ProductGrid
    * @description The lifecyle method straight after the shouldComponentUpdate
    */
   //componentWillUpdate(nextProps, nextState){
@@ -62,7 +62,7 @@ class BikeGrid extends React.Component {
 
   /**
    * @function componentDidUpdate
-   * @memberof BikeGrid
+   * @memberof ProductGrid
    * @description The lifecyle didMount method executed after the render
    */
   //componentDidUpdate(prevProps, prevState){
@@ -71,7 +71,7 @@ class BikeGrid extends React.Component {
 
   /**
    * @function componentWillMount
-   * @memberof BikeGrid
+   * @memberof ProductGrid
    * @description The lifecyle componentWillMount method executed before mounting
    */
   //componentWillMount(){
@@ -80,7 +80,7 @@ class BikeGrid extends React.Component {
 
   /**
    * @function componentDidMount
-   * @memberof BikeGrid
+   * @memberof ProductGrid
    * @description The lifecyle didMount method executed after the render
    */
   //componentDidMount(){
@@ -89,7 +89,7 @@ class BikeGrid extends React.Component {
 
   /**
    * @function componentWillUnmount
-   * @memberof BikeGrid
+   * @memberof ProductGrid
    * @description The lifecyle will unmount method
    */
   //componentWillUnmount(){
@@ -98,7 +98,7 @@ class BikeGrid extends React.Component {
 
   /**
    * @function destroy
-   * @memberof BikeGrid
+   * @memberof ProductGrid
    * @description Destroy the component
    */
   destroy(){
@@ -109,7 +109,7 @@ class BikeGrid extends React.Component {
 	/**
 	 * @public
 	 * @function onChange
-	 * @memberof BikeGrid
+	 * @memberof ProductGrid
 	 * @description Handle the change event for the filter
 	 * @param {object} e - The event object
 	 */
@@ -121,8 +121,8 @@ class BikeGrid extends React.Component {
 
   /**
    * @function render
-   * @memberof BikeGrid
-   * @description Render the BikeGrid component
+   * @memberof ProductGrid
+   * @description Render the ProductGrid component
    */
   render(){
     console.log(this.state.filter);
@@ -184,39 +184,39 @@ class BikeGrid extends React.Component {
 
 /**
  * @function propTypes
- * @memberof BikeGrid
+ * @memberof ProductGrid
  * @description Strong type the property expectations
  */
-BikeGrid.propTypes = {
+ProductGrid.propTypes = {
   data:React.PropTypes.array,
   classArray:React.PropTypes.array
 };
 
 /**
  * @function defaultProps
- * @memberof BikeGrid
+ * @memberof ProductGrid
  * @description Set the default props for the component in the event they
  * were not define in the creation
  */
-// BikeGrid.defaultProps = {
+// ProductGrid.defaultProps = {
 //
 // }
 
 /**
  * @namespace app
- * @function bikegrid
- * @description The aim.BikeGrid reference object for creating new instances
+ * @function ProductGrid
+ * @description The aim.ProductGrid reference object for creating new instances
  */
-app.bikegrid = (function(){
+app.productGrid = (function(){
   return {
     create:function(parent, options){
       // // Get the parent element from the dom
       let pNode = document.getElementById(parent);
       // // Add the default class name to the parent
-      let grid = <BikeGrid data={options.data} classArray={options.classArray} parent={parent} />;
+      let grid = <ProductGrid data={options.data} classArray={options.classArray} parent={parent} />;
       // Render the menu in the dom
       grid = ReactDOM.render(grid, pNode);
-      // // Return the BikeGrid object for referencing
+      // // Return the ProductGrid object for referencing
       return grid;
     }
   }
