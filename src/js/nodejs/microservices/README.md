@@ -48,3 +48,12 @@ of demonstration simple fades in the userdetails row groups with a delay.
 Did not see the point of cluttering with a framework such as bootstrap. The SASS
 and responsive nature has been custom written.
 public/sass
+
+#################################################################
+# UNIT TESTING
+#################################################################
+Two unit testing examples have been included, one for the server using "mocha"
+to test the node and express framework, only a rudimentary example.
+
+The other is using QUnit in the public folder to run a simple test on the
+custom jQuery component
