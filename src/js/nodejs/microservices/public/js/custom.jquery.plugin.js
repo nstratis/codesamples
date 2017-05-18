@@ -15,12 +15,12 @@
    * @function animateItem
    * @description A simple function to set a timeout on an inner element
    */
-  function animateItem(item, i){
+  function animateItem(speed, item, i){
     // Set a timeout to add the visible state for the item
     setTimeout(function(){
       // Add the visible class to the item
       $(item).addClass('visible');
-    },(i * 1000));
+    },(i * (speed * 1000)));
   }
 
   $.fn.animateContent = function(options){
@@ -29,7 +29,7 @@
     // Declare the iterator and the length of the inner row items
     i, length = rows.length;
     // Loop through the rows and update the opacity
-    for(i=0; i<length; i++){ animateItem(rows[i], i); }
+    for(i=0; i<length; i++){ animateItem(options.speed, rows[i], i); }
     //console.log(rows, options);
     return this;
   };
