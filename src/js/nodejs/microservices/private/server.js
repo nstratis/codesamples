@@ -68,9 +68,9 @@ authApp.use(function (err, req, res, next) {
 });
 
 // Set the port for listening to the application
-authApp.listen(authApp.get('port'), function(){
+var server = authApp.listen(authApp.get('port'), function(){
   console.log('Listening on Port: ' + authApp.get('port'));
 });
 
 // Export the context so that it is accessible as a node module
-module.exports = authApp;
+module.exports = server;

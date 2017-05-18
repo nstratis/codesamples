@@ -7,9 +7,7 @@
 <meta name="app-mobile-web-app-capable" content="yes" />
 <meta name="app-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="msapplication-tap-highlight" content="no" />
-
 <link rel="stylesheet" href="css/app-default.css" media="screen">
-
 <script type="text/javascript" src="libs/aim.1.9/aim.loader-min.js"></script>
 <script>
 // Delayed loading to ensure there is no render blocking
@@ -19,7 +17,8 @@ aim.loader
 .script("js/custom.jquery.plugin.js")
 .load(function()
 {
-
+  // Ultimately this would broken down into an alternate partial being
+  // only included for the page it represents
   var pnl = $('#pnl-userdetails');
   if(pnl.length > 0){  pnl.animateContent({speed:0.5}); }
 
