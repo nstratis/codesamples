@@ -1,0 +1,23 @@
+<!--
+  USER DETAILS PANEL
+-->
+<div id="pnl-userdetails" class="app-pnl visible">
+  <header><h2>{{title}}</h2></header>
+  <section>
+    <p>{{desc}}</p>
+    <div class="frm-row col">
+      <label>User Type:</label><input type="text" value="{{user_type}}" />
+      <label>Organization:</label><input type="text" value="{{organisation_name}}" />
+      <label>Display Name:</label><input type="text" value="{{display_name}}" />
+    </div>
+    <div class="frm-row col">
+      <label>Firstname:</label><input type="text" value="{{given_name}}" />
+      <label>Lastname:</label><input type="text" value="{{family_name}}" />
+      <label>Created:</label><input type="text" value="{{created_at}}" />
+      <label>Last Updated:</label><input type="text" value="{{updated_at}}" />
+    </div>
+    <div class="frm-row rgt">
+      <button type="submit">Logout</button> <button type="submit">Save Details</button>
+    </div>
+  </section>
+</div>

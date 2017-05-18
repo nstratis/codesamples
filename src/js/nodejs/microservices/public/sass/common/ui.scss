@@ -1,0 +1,21 @@
+/*
+ * LOGO
+ * The main application logo
+ */
+.app-logo
+{
+width:68px;
+height:44px;
+background:url($assetPath + 'avd_logo_white_small.png') no-repeat;
+margin-top:8px;
+margin-left:10px;
+}
+
+/*
+ * TEXT AND GENERAL FORMAT STYLES
+ */
+.txt-sml
+{
+color:$white;
+font-size:$fxsmall;
+}

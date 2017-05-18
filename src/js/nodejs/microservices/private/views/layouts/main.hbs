@@ -1,0 +1,32 @@
+<!--
+  DEFAULT APPLICATION TEMPLATE
+  This is the basic html template for the application which will reader
+  the header for each page and the body content
+-->
+<!doctype html>
+<html lang="en">
+{{>pg.header}}
+<body>
+<div id="wrapper">
+  <!--
+    APP HEADER
+  -->
+  <header class="main">
+    <div class="app-logo"> </div>
+  </header>
+  <!--
+    CONTENT CONTAINER
+  -->
+  <div class="main">
+    {{{body}}}
+  </div>
+
+  <!--
+    APP FOOTER
+  -->
+  <footer class="main">
+    <span class="txt-sml">&copy; AV Digital Media Ltd. All Rights Reserved.</span>
+  </footer>
+
+</body>
+</html>

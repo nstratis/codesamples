@@ -1,0 +1,40 @@
+/*
+ * STANDARD PANELS and DIALOG WINDOWS
+ */
+
+.app-pnl
+{
+display:none;
+margin:0 auto;
+margin-top:100px;
+background:$pnlback;
+border:1px solid $pnlborder;
+@include border-radius(5px);
+@include box-shadow(1px, 1px, 2px);
+  header h2 { color:$red; padding:10px 10px 0 10px; }
+  section { padding:10px; }
+}
+// Visible state for the panel
+.app-pnl.visible { display:block; }
+
+// MAIN LOGIN PANEL
+#pnl-login { width:300px; height:auto; }
+// USER DETAILS PANEL
+#pnl-userdetails
+{
+width:600px;
+  .frm-row
+  {
+  opacity:0;
+  @include transit(opacity, 1s, ease-out);
+  }
+}
+
+// Column containers within the panels
+.col
+{
+display:inline-block;
+vertical-align:top;
+width:calc(50% - 10px);
+height:auto;
+}

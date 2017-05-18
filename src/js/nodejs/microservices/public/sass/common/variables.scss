@@ -1,0 +1,38 @@
+/*
+ * DEFAULT COLOURS, SIZES AND PATHS
+ * This is the base colour palette for the application
+ */
+
+// Set the default asset path
+$assetPath:'../assets/';
+
+// Default colours
+$white:#fff;
+$lgtgrey:#EDF1EE;
+$medlgtgrey:#3d3d3d;
+$drkgrey:#252525;
+
+// Headers and Footers
+$appheader:#333333;
+$appfooter:#333333;
+
+// Panel Background and borders
+$pnlborder:#b0b1ad;
+$pnlback:#fbfbfb;
+
+// Form labels and inputs
+$frmborder:#c8c0b7;
+$frmlabel:#222222;
+$placeholder:rgba(40,53,51,0.5);
+
+// App colours
+$red:#c92445;
+
+
+// Font sizes
+$fxsmall:12px;
+$fbase:16px;
+$fsmall:14px;
+$fheading:21px;
+$flrg:28px;
+$fmed:20px;

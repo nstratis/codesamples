@@ -1,0 +1,107 @@
+
+/*
+ * smartphones, iPhone, portrait 480x320 phones
+ */
+@media only screen
+{
+  /*
+   * smartphones, iPhone, portrait 480x320 phones
+   */
+  @media (min-width:0px) and (max-width:319px)
+  {
+    #pnl-login { width:300px; height:auto; }
+    #pnl-userdetails { width:300px; }
+    .col { width:100%; }
+    .frm-row.rgt { padding-right:10px; }
+  }
+
+  /*
+   * Samsung Duo (portrait)
+   * Iphone 6 (portrait)
+   * Nokia Lumia (portrait)
+   * Lenovo smartphone (portrait)
+   *
+   * smartphones, iPhone, portrait 480x320 phones
+   */
+  @media (min-width:320px) and (max-width:479px)
+  {
+    #pnl-userdetails { width:300px; }
+    .col { width:100%; }
+    .frm-row.rgt { padding-right:10px; }
+  }
+
+  /*
+   * Samsung Duo (landscape)
+   * Nokia Lumia (landscape)
+   * Kindle Fire (portrait)
+   *
+   * portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
+   */
+  @media (min-width:480px) and (max-width:639px)
+  {
+    #pnl-userdetails { width:470px; }
+    .col { width:100%; }
+    .frm-row.rgt { padding-right:10px; }
+  }
+
+  /*
+   * Iphone 6 (landscape)
+   * Lenovo smartphone (landscape)
+   *
+   * portrait tablets, portrait iPad, landscape e-readers,
+   * landscape 800x480 or 854x480 phones
+   */
+  @media (min-width:640px) and (max-width:767px)
+  {
+
+  }
+
+  /*
+   * Samsung Galaxy Tab 10 (portrait)
+   * IPad Mini (portrait)
+   * Kindle Fire (landscape)
+   *
+   * portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+   */
+  @media (min-width:768px) and (max-width:959px)
+  {
+
+  }
+
+  /*
+   * tablet,
+   * landscape iPad,
+   * lo-res laptops ands desktops
+   */
+  @media (min-width:0px) and (max-width:1023px)
+  {
+
+  }
+
+  /*
+   * IPad Mini (landscape)
+   * big landscape tablets, laptops, and desktops
+   */
+  @media (min-width:1024px) and (max-width:1279px)
+  {
+
+  }
+
+  /*
+   * Samsung Galaxy Tab 10 (landscape)
+   * hi-res laptops and desktops
+   */
+  @media (min-width:1280px) and (max-width:1479px)
+  {
+
+  }
+
+  @media (min-width:1480px) and (max-width:1719px)
+  {
+  }
+
+  @media (min-width:1720px)
+  {
+
+  }
+}

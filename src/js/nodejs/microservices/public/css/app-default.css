@@ -1,0 +1,318 @@
+/*
+ * This is a sample SASS file demonstrating usage and the compilation
+ * of SASS into CSS.
+ * sass src/js/nodejs/microservices/public/sass/def_app.scss src/js/nodejs/microservices/public/css/app-default.css
+ */
+/*
+ * DEFAULT COLOURS, SIZES AND PATHS
+ * This is the base colour palette for the application
+ */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:focus {
+  outline-offset: 0px;
+  outline: none; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+label, h1, h2, h3, span, p, ul, li {
+  -webkit-touch-callout: default;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important; }
+
+::-webkit-input-placeholder {
+  color: rgba(40, 53, 51, 0.5); }
+
+:-moz-placeholder {
+  color: rgba(40, 53, 51, 0.5);
+  opacity: 1; }
+
+::-moz-placeholder {
+  color: rgba(40, 53, 51, 0.5);
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: rgba(40, 53, 51, 0.5); }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  color: #252525; }
+
+#wrapper,
+.modal-layer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/*
+ * Standard Wrapper size and outer container
+ */
+#wrapper {
+  position: fixed;
+  min-width: 300px; }
+
+.modal-layer {
+  position: absolute; }
+
+/*
+ * Modal overlay layer for panels that
+ * appear in a modal layer in the application
+ */
+.modal-layer {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  display: none; }
+
+.modal-layer.visible {
+  display: block !important; }
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important; }
+
+/*
+ * STANDARD PANELS and DIALOG WINDOWS
+ */
+.app-pnl {
+  display: none;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: #fbfbfb;
+  border: 1px solid #b0b1ad;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+  .app-pnl header h2 {
+    color: #c92445;
+    padding: 10px 10px 0 10px; }
+  .app-pnl section {
+    padding: 10px; }
+
+.app-pnl.visible {
+  display: block; }
+
+#pnl-login {
+  width: 300px;
+  height: auto; }
+
+#pnl-userdetails {
+  width: 600px; }
+  #pnl-userdetails .frm-row {
+    opacity: 0;
+    -moz-transition: opacity 1s ease-out;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out; }
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 10px);
+  height: auto; }
+
+/*
+ * MAIN INTERFACE CONTAINERS
+ * Common elements such as the header and footers
+ */
+header.main,
+div.main,
+footer.main {
+  position: absolute;
+  width: 100%; }
+
+header.main {
+  background: #333333;
+  height: 60px;
+  top: 0; }
+
+div.main {
+  top: 60px;
+  bottom: 50px;
+  overflow-y: auto; }
+
+footer.main {
+  background: #333333;
+  height: 50px;
+  bottom: 0; }
+  footer.main span {
+    line-height: 50px;
+    padding-left: 5px; }
+
+/*
+ * FORM STYLES
+ * Basic form element styles
+ */
+.frm-row {
+  padding: 10px; }
+  .frm-row label {
+    display: block;
+    color: #3d3d3d;
+    margin: 5px 0 5px 0;
+    font-size: 14px;
+    font-weight: bold; }
+  .frm-row input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #c8c0b7;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .frm-row input:focus {
+    border-left: 1px solid #c92445;
+    border-right: 1px solid #c92445;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: #c92445;
+    color: #EDF1EE; }
+  .frm-row button {
+    padding: 20px;
+    background: #c92445;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .frm-row button:hover {
+    background: #252525;
+    color: #EDF1EE; }
+
+.frm-row.visible {
+  opacity: 1 !important; }
+
+.frm-row.rgt {
+  text-align: right;
+  padding-right: 25px; }
+
+/*
+ * LOGO
+ * The main application logo
+ */
+.app-logo {
+  width: 68px;
+  height: 44px;
+  background: url("../assets/avd_logo_white_small.png") no-repeat;
+  margin-top: 8px;
+  margin-left: 10px; }
+
+/*
+ * TEXT AND GENERAL FORMAT STYLES
+ */
+.txt-sml {
+  color: #fff;
+  font-size: 12px; }
+
+/*
+ * smartphones, iPhone, portrait 480x320 phones
+ */
+@media only screen {
+  /*
+   * smartphones, iPhone, portrait 480x320 phones
+   */ }
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+  #pnl-login {
+    width: 300px;
+    height: auto; }
+
+  #pnl-userdetails {
+    width: 300px; }
+
+  .col {
+    width: 100%; }
+
+  .frm-row.rgt {
+    padding-right: 10px; } }
+@media only screen {
+  /*
+   * Samsung Duo (portrait)
+   * Iphone 6 (portrait)
+   * Nokia Lumia (portrait)
+   * Lenovo smartphone (portrait)
+   *
+   * smartphones, iPhone, portrait 480x320 phones
+   */ }
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  #pnl-userdetails {
+    width: 300px; }
+
+  .col {
+    width: 100%; }
+
+  .frm-row.rgt {
+    padding-right: 10px; } }
+@media only screen {
+  /*
+   * Samsung Duo (landscape)
+   * Nokia Lumia (landscape)
+   * Kindle Fire (portrait)
+   *
+   * portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
+   */ }
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+  #pnl-userdetails {
+    width: 470px; }
+
+  .col {
+    width: 100%; }
+
+  .frm-row.rgt {
+    padding-right: 10px; } }
+@media only screen {
+  /*
+   * Iphone 6 (landscape)
+   * Lenovo smartphone (landscape)
+   *
+   * portrait tablets, portrait iPad, landscape e-readers,
+   * landscape 800x480 or 854x480 phones
+   */
+  /*
+   * Samsung Galaxy Tab 10 (portrait)
+   * IPad Mini (portrait)
+   * Kindle Fire (landscape)
+   *
+   * portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+   */
+  /*
+   * tablet,
+   * landscape iPad,
+   * lo-res laptops ands desktops
+   */
+  /*
+   * IPad Mini (landscape)
+   * big landscape tablets, laptops, and desktops
+   */
+  /*
+   * Samsung Galaxy Tab 10 (landscape)
+   * hi-res laptops and desktops
+   */ }
+
+/*# sourceMappingURL=app-default.css.map */

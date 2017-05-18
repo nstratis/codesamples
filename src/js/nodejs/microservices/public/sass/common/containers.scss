@@ -1,0 +1,33 @@
+/*
+ * MAIN INTERFACE CONTAINERS
+ * Common elements such as the header and footers
+ */
+header.main,
+div.main,
+footer.main
+{
+position:absolute;
+width:100%;
+}
+
+header.main
+{
+background:$appheader;
+height:60px;
+top:0;
+}
+
+div.main
+{
+top:60px;
+bottom:50px;
+overflow-y:auto;
+}
+
+footer.main
+{
+background:$appfooter;
+height:50px;
+bottom:0;
+  span { line-height:50px; padding-left:5px; }
+}
