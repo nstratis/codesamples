@@ -9,7 +9,7 @@
  * AV Digital Media Ltd (UK).
  * @property {String} NAME - The name reference for the object instance
  */
-app.mainVw = aim.view.extend(function($super){
+app.mainVw = aim.view.extend(function($super) {
 	"use strict";
 	// Set the name reference for the object
 	this.NAME = 'mainVw';
@@ -19,7 +19,7 @@ app.mainVw = aim.view.extend(function($super){
 	* @description Override the initialize method so that events can be registered
 	* @memberof mainVw
 	*/
-	this.initialize = function(){
+	this.initialize = function() {
 		// Call the parent initialize method
 		$super.initialize.call(this);
 	};
@@ -33,7 +33,7 @@ app.mainVw = aim.view.extend(function($super){
 	 * @memberof mainVw
 	 * @param {Array} data - The data to populate the comment list with
 	 */
-	this.crteList = function(data){
+	this.crteList = function(data) {
 		debug('mainVw.crteList()', data);
 		// Initialize the comment list
 		app.messageDisplay.create('message-display', {data:data.reviews});
@@ -44,7 +44,7 @@ app.mainVw = aim.view.extend(function($super){
 	 * @description Generates the review section at the bottom of the page
 	 * @memberof mainVw
 	 */
-	this.crteReview = function(){
+	this.crteReview = function() {
 		debug('mainVw.crteReview()');
 		// Initialize the review component
 		app.review.create('review-container');
@@ -55,16 +55,16 @@ app.mainVw = aim.view.extend(function($super){
 	 * @description Renders the main elements of the ui and sets the references
 	 * @memberof mainVw
 	 */
-	this.render = function(){
+	this.render = function() {
 		debug('mainVw.render()');
 		// Set the view element reference, this is the main wrapper of the application
 		this.setView('#wrapper', true);
 		// Check if this is a mobile device
-		if(!aim.agent.mobile){
+		if (!aim.agent.mobile) {
 			this.view.addClass('no-tchdev');
 		} else {
 			// Check if this is a Win Platform, simple utilization of the of aim.agent
-			if(aim.agent.platform === 'Win32' || aim.agent.platform === 'Win64'){
+			if (aim.agent.platform === 'Win32' || aim.agent.platform === 'Win64') {
 				// Add the no touch class to enable rollovers
 				this.view.addClass('no-tchdev');
 			} else {

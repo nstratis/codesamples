@@ -9,7 +9,7 @@
  * AV Digital Media Ltd (UK).
  * @property {String} NAME - The name reference for the object instance
  */
-app.startUpCom = aim.command.extend(function($super){
+app.startUpCom = aim.command.extend(function($super) {
 	"use strict";
 	// Set the name reference for the command
 	this.NAME = "startUpCom";
@@ -19,7 +19,7 @@ app.startUpCom = aim.command.extend(function($super){
 	 * @memberof ldModCom
 	 * @param {object} data - The data to pass to the function
 	 */
-	this.execute = function(){
+	this.execute = function() {
 		debug('startUpCom.execute()');
 		// Update the preloader message
 		this.dispatch(app.PRLR_SHW, {percent:40});

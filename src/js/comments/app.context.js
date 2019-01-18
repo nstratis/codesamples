@@ -10,7 +10,7 @@
  */
 // Declare the application name space
 var app = {};
-app.context = aim.context.extend(function($super){
+app.context = aim.context.extend(function($super) {
 	"use strict";
 
 	/**
@@ -18,21 +18,21 @@ app.context = aim.context.extend(function($super){
 	 * @description Map the model instances
 	 * @memberof context
 	 */
-	this.mapModels = function(){ return; };
+	this.mapModels = function() { return; };
 
 	/**
 	 * @function mapServices
 	 * @description Map the service instances
 	 * @memberof context
 	 */
-	this.mapServices = function(){ return; };
+	this.mapServices = function() { return; };
 
 	/**
 	 * @function mapViews
 	 * @description Map the view instances
 	 * @memberof context
 	 */
-	this.mapViews = function(){
+	this.mapViews = function() {
 		// Map the main View which can control the entire wrapper content
 		// and initilize any internal components
 		this.map(app.mainVw);
@@ -43,7 +43,7 @@ app.context = aim.context.extend(function($super){
 	 * @description Map the command instances
 	 * @memberof context
 	 */
-	this.mapCommands = function(){
+	this.mapCommands = function() {
 		// Map the main startup command
 		this.map(app.startUpCom, aim.STARTUP);
 		// Map any other application commands that are required by default

@@ -3,93 +3,89 @@
  * SEND BUTTON FORMAT - This is the standard style for the submit
  * button, it will auto size based on the label size
  */
-.send_btn
-{
-width:133px;
-height:50px;
-background:$blue;
-border:none;
-color:$white;
-margin-top:12px;
-@include border-radius(5px);
+.send_btn {
+  width: 133px;
+  height: 50px;
+  background: $blue;
+  border: none;
+  color: $white;
+  margin-top: 12px;
+  @include border-radius(5px);
 }
 
 /*
  * COMMENT BOX - The default styles for the comment box, there are
  * effectively 2 styles, one with a white background, the other grey
  */
-.msg
-{
-font-size:$fbase;
-width:100%;
-padding:20px;
-@include border-radius(10px);
-border:1px solid $lgtgrey;
-color:$drkgrey;
+.msg {
+  font-size: $fbase;
+  width: 100%;
+  padding: 20px;
+  @include border-radius(10px);
+  border: 1px solid $lgtgrey;
+  color: $drkgrey;
 }
 
 // Set the input element focus state
-.msg:focus
-{
-border:1px solid $blue;
+.msg:focus {
+  border: 1px solid $blue;
 }
 
 /*
  * MAIN CONTAINERS
  */
 #message-display,
-#review-container
-{
-position:relative;
-margin:35px 35px 0 35px;
+#review-container {
+  position: relative;
+  margin: 35px 35px 0 35px;
 }
 
-#review-container
-{
-margin-top:75px;
-margin-bottom:35px;
+#review-container {
+  margin-top: 75px;
+  margin-bottom: 35px;
 }
 
 /*
  * LIST AND SUB CONTAINER SECTIONS
  * These are the base layouts for main elements on the page
  */
-.mncont, .newrev
-{
-position:relative;
+.mncont, .newrev {
+  position: relative;
 }
 
 // Set the default styles for the write review section at the bottom
-.newrev
-{
-padding:50px 0 0 0;
-border:none;
-border-top:1px solid $lgtgrey;
-text-align:right;
-  legend
-  {
-  width:320px;
-  margin-left:calc(50% - 160px);
-  font-weight:bold;
-  text-align:center;
-  font-size:$fheading;
+.newrev {
+  padding: 50px 0 0 0;
+  border: none;
+  border-top: 1px solid $lgtgrey;
+  text-align: right;
+  legend {
+    width: 320px;
+    margin-left: calc(50% - 160px);
+    font-weight: bold;
+    text-align: center;
+    font-size: $fheading;
   }
   // Review button width adjustment
-  .newrev_btn { width:206px; margin-bottom:35px; }
+  .newrev_btn {
+    width: 206px;
+    margin-bottom: 35px;
+  }
 }
 
 /*
  * LIST CONTAINER - default styles
  */
 .revlst,
-.commuser
-{
-position:relative;
-list-style-type:none;
+.commuser {
+  position: relative;
+  list-style-type: none;
 }
 
 // Standard comment list item
-.revlst_elem { margin-bottom:48px; }
+.revlst_elem {
+  margin-bottom: 48px;
+}
 
 /*
  * INDENTATION - No real guide for indentations
@@ -97,79 +93,86 @@ list-style-type:none;
  * or is each subsequent child further indented which would pose
  * display issues in scalability
  */
-.commuser
-{
-margin-left:125px;
-margin-top:55px;
+.commuser {
+  margin-left: 125px;
+  margin-top: 55px;
 }
 
 // Write a new comment input element, this is always the end element in the
 // list of comments
-.comlst_write { text-align:right; }
+.comlst_write {
+  text-align: right;
+}
 
 // Main Title for the comment box
-.revlst_title
-{
-color:$blue;
-font-size:$fbase;
+.revlst_title {
+  color: $blue;
+  font-size: $fbase;
   // Duration colour styling
-  .duration { color:$drkgrey; margin-left:12px; font-weight:normal; }
+  .duration {
+    color: $drkgrey;
+    margin-left: 12px;
+    font-weight: normal;
+  }
 }
 
 /*
  * Custom Style colour for the message box, non editable
  */
-.revlst_message
-{
-position:relative;
-margin:35px 0 12px 0;
-background-color:$lgtgrey;
+.revlst_message {
+  position: relative;
+  margin: 35px 0 12px 0;
+  background-color: $lgtgrey;
 }
 
 /*
  * Arrow for the message box
  */
-.revlst_message::before
-{
-width:0px;
-height:0px;
-background:none;
-content:'';
-position:absolute;
-top:-20px;
-left:25px;
-@include arrow-right(0px, 20px, 20px, $lgtgrey);
+.revlst_message::before {
+  width: 0px;
+  height: 0px;
+  background: none;
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 25px;
+  @include arrow-right(0px, 20px, 20px, $lgtgrey);
 }
 
-.rev_input { position:relative; }
-
-.msg_arrow
-{
-position:absolute;
-background:url($assetPath + 'comments/border_triang.png');
-display:block;
-width:22px;
-height:21px;
-top:-20px;
-left:25px;
+.rev_input {
+  position: relative;
 }
 
-//border_triang
+.msg_arrow {
+  position: absolute;
+  background: url($assetPath + 'comments/border_triang.png');
+  display: block;
+  width: 22px;
+  height: 21px;
+  top: -20px;
+  left: 25px;
+}
 
 // Standard like button sizing for the message box
-.revlst_btn
-{
-width:78px;
-height:36px;
-border:1px solid $blue;
-background:$blue;
-color:$white;
-font-weight:bold;
-text-align:center;
-@include border-radius(5px);
+.revlst_btn {
+  width: 78px;
+  height: 36px;
+  border: 1px solid $blue;
+  background: $blue;
+  color: $white;
+  font-weight: bold;
+  text-align: center;
+  @include border-radius(5px);
 }
 // Alternate white format button
-.commuser .revlst_btn { border:1px solid $paleblue; background:$white; color:$blue; }
+.commuser .revlst_btn {
+  border: 1px solid $paleblue;
+  background: $white;
+  color: $blue;
+}
 // Current Likes text, the style guide isn't clear as to the maximum
 // character for this, I would assume there needs to be a limit ensure no wrap
-.revlst_likes { margin-left:12px; font-size:$fsmall; }
+.revlst_likes {
+  margin-left: 12px;
+  font-size: $fsmall;
+}

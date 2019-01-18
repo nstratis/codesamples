@@ -1,49 +1,49 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Basic Comment Sample Component</title>
-<meta name="keywords" content="cleaning services" />
-<meta name="description" content="AV Digital Media, advanced application development" />
-<meta name="author" content="AV Digital Media Ltd." />
-<meta name="app-mobile-web-app-capable" content="yes" />
-<meta name="app-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="viewport" content="maximum-scale=1.0,initial-scale=1.0,width=device-width,height=device-height,user-scalable=no" />
-<meta name="robots" content="index,follow">
-<meta name="format-detection" content="telephone=no" />
-<link rel="stylesheet" href="../css/def_comments.css" media="screen" />
-<script type="text/javascript" src="../../libs/aim.1.9/aim.loader-min.js"></script>
-<script>
-	aim.loader.options({debug:true});
-	aim.loader
-	// AIM Library files
-	.script("../../libs/aim.1.9/aim.util-min")
-	.script("../../libs/aim.1.9/aim.mvc-min")
-	// ReactJS Library files
-	.script("../../libs/react")
-	.script("../../libs/react-dom")
+	<meta charset="utf-8">
+	<title>Basic Comment Sample Component</title>
+	<meta name="keywords" content="cleaning services" />
+	<meta name="description" content="AV Digital Media, advanced application development" />
+	<meta name="author" content="AV Digital Media Ltd." />
+	<meta name="app-mobile-web-app-capable" content="yes" />
+	<meta name="app-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="maximum-scale=1.0,initial-scale=1.0,width=device-width,height=device-height,user-scalable=no" />
+	<meta name="robots" content="index,follow">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="../css/def_comments.css" media="screen" />
+	<script type="text/javascript" src="../../libs/aim.1.9/aim.loader-min.js"></script>
+	<script>
+		aim.loader.options({debug:true});
+		aim.loader
+		// AIM Library files
+		.script("../../libs/aim.1.9/aim.util-min")
+		.script("../../libs/aim.1.9/aim.mvc-min")
+		// ReactJS Library files
+		.script("../../libs/react")
+		.script("../../libs/react-dom")
 
-	// Base application files, if this were actually a real application
-	.script("../js/comments/app.context")
-	.script("../js/comments/commands/startup.command")
-	.script("../js/comments/views/main.view")
-	// Components, for this purpose I have used ReactJS
-	.script("../js/reactjs_es6/message.display")
-	.script("../js/reactjs_es6/create.review")
-	.load(function(){
-		debug('Application Initialized', 'I');
-	  // Set the Injection property, this defines whether the this.inject property will be checked
-		// for injectable items
-		aim.INJECTION = true;
-		// Set the Debug status of the application, whether the debug
-		// statements in the application should be logged
-		aim.DEBUG = true;
-		// Instantiate the application context, the AIM.contexts is whether the reference to the context
-		// should be stored, this is useful for modular applications where there may be multiple contexts
-		app.context.create('app.context', true);
+		// Base application files, if this were actually a real application
+		.script("../js/comments/app.context")
+		.script("../js/comments/commands/startup.command")
+		.script("../js/comments/views/main.view")
+		// Components, for this purpose I have used ReactJS
+		.script("../js/reactjs_es6/message.display")
+		.script("../js/reactjs_es6/create.review")
+		.load(function() {
+			debug('Application Initialized', 'I');
+		  // Set the Injection property, this defines whether the this.inject property will be checked
+			// for injectable items
+			aim.INJECTION = true;
+			// Set the Debug status of the application, whether the debug
+			// statements in the application should be logged
+			aim.DEBUG = true;
+			// Instantiate the application context, the AIM.contexts is whether the reference to the context
+			// should be stored, this is useful for modular applications where there may be multiple contexts
+			app.context.create('app.context', true);
 
-	});
-</script>
+		});
+	</script>
 </head>
 <body>
 <div id="wrapper" class="no-tchdev">

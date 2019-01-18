@@ -9,7 +9,7 @@
  * AV Digital Media Ltd (UK).
  * @property {String} NAME - The name reference for the object instance
  */
-app.startUpCom = aim.command.extend(function($super){
+app.startUpCom = aim.command.extend(function($super) {
 	"use strict";
 	// Set the name reference for the command
 	this.NAME = "startUpCom";
@@ -19,7 +19,7 @@ app.startUpCom = aim.command.extend(function($super){
 	 * @memberof ldModCom
 	 * @param {object} data - The data to pass to the function
 	 */
-	this.execute = function(){
+	this.execute = function() {
 		debug('startUpCom.execute()');
 		// Update the preloader message
 		this.dispatch(app.PRLR_SHW, {percent:40});
@@ -29,18 +29,18 @@ app.startUpCom = aim.command.extend(function($super){
 		// React list component however I prefer having a reference stored
 		// which is accessible for additional components which may exist
 		aim.ajax.send({
-		  type:'GET',
-		  url:'../data/messages.json',
-			dataType:'json',
+		  type: 'GET',
+		  url: '../data/messages.json',
+			dataType: 'json',
 		  // Success handler for the ajax request
-		  success:function(data){
+		  success: function(data) {
 				debug('data', data);
 				// Render the components in the dom
 				view.crteList(data);
 				// Render the new review section
 				view.crteReview();
 		  },
-			error:function(e){
+			error:function(e) {
 				// Do something else as there was an error
 				return;
 			},

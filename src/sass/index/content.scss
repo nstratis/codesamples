@@ -1,26 +1,21 @@
-#wrapper
-{
-text-align:center;
+#wrapper {
+  text-align: center;
 }
 
-img
-{
-margin:20px;
+img {
+  margin: 20px;
 }
 
-h1, p
-{
-margin:10px;
+h1, p {
+  margin: 10px;
 }
 
-h1
-{
-font-size:$fheading;
-color:$medlgtgrey;
+h1 {
+  font-size: $fheading;
+  color: $medlgtgrey;
 }
 
-a
-{
-padding:10px;
-color:$drkgrey;
+a {
+  padding: 10px;
+  color: $drkgrey;
 }
