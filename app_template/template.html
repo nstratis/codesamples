@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <title>AV Digital Media Ltd. | Sample App | Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="maximum-scale=2.0,initial-scale=1.0,width=device-width,height=device-height">
+  <meta name="description" content="AV Digital Media Ltd. sample application files for Vue and React">
+  <meta name="author" content="Nikolas Stratis">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="css/theme-default.css" media="screen">
+</head>
+<body>
+<div id="wrapper">
+  <div id="app-container" class="main">
+    <header class="main">
+      <div class="icon-burger">
+        <div class="line"> </div>
+        <div class="line"> </div>
+        <div class="line"> </div>
+      </div>
+      <img class="logo" src="assets/logo.svg" width="200" height="25" />
+    </header>
+    <section class="main">
+      <div class="app-inner-content">
+        <div class="area-left">
+          <nav class="main">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Page with Grid</a></li>
+              <li><a href="/">Page with Form</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="area-main">
+          <h1 class="title">Sample Application Home</h1>
+          <p class="copy">This is a sample application build with "FRAMEWORK", and is a simple
+            demonstration of code formatting and style.
+          </p>
+
+          <div class="grid">
+            <header class="grid-hdr">
+              <div class="col">Id</div>
+              <div class="col">Username</div>
+              <div class="col">Firstname</div>
+              <div class="col">Lastname</div>
+              <div class="col">Status</div>
+            </header>
+            <section class="grid-tbl">
+              <div class="row">
+                <div class="col">222</div>
+                <div class="col">john123</div>
+                <div class="col">John</div>
+                <div class="col">Jones</div>
+                <div class="col">1</div>
+              </div>
+              <div class="row">
+                <div class="col">223</div>
+                <div class="col">bob123</div>
+                <div class="col">Bob</div>
+                <div class="col">Smith</div>
+                <div class="col"><div class="icon-state error">!</div></div>
+              </div>
+              <div class="row">
+                <div class="col">223</div>
+                <div class="col">bob123</div>
+                <div class="col">Bob</div>
+                <div class="col">Smith</div>
+                <div class="col"><div class="icon-state success">✔</div></div>
+              </div>
+            </section>
+          </div>
+
+          <div class="app-form">
+            <h1 class="title">Enter Details</h1>
+            <p class="copy">Enter the details required for the form below</p>
+            <form>
+              <fieldset class="field-grp">
+                <div class="form-row">
+                  <label>Username</label><input type="text" name="username" />
+                </div>
+                <div class="form-row">
+                  <label>Firstname</label><input type="text" name="username" />
+                </div>
+                <div class="form-row">
+                  <label>Lastname</label><input type="text" name="username" />
+                </div>
+                <div class="form-bt">
+                  <button class="bt-action" type="submit">Save Details</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main">
+      <span>&copy; AV Digital Media Ltd. All Rights Reserved.</span>
+    </footer>
+  </div>
+</div>
+<script>
+  // Simple script to test the menu open/close states
+  const bt = document.querySelector('.icon-burger'),
+  content = document.querySelector('.app-inner-content');
+
+  bt.addEventListener('click', () => {
+    if (content.classList.contains('menu-open')) {
+      content.classList.remove('menu-open');
+      return;
+    }
+    content.classList.add('menu-open');
+  }, false);
+</script>
+</body>
+</html>

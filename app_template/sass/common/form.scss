@@ -1,0 +1,53 @@
+.field-grp {
+  border: none;
+  text-align: left;
+    .form-row {
+    display: flex;
+    align-items: stretch;
+    padding: 10px 0;
+
+    label {
+      // width: 150px;
+      height: 30px;
+      line-height: 30px;
+      flex: auto;
+    }
+
+    input {
+      height: 30px;
+      line-height: 30px;
+      margin-left: 5px;
+      padding: 0px 5px;
+      flex: auto;
+      // width: 130px;
+      transition: all 0.5s ease-out;
+      color: $input-col;
+      background: $input-bg;
+      border: $input-bdr;
+      border-radius: 2px;
+    }
+
+    input:focus {
+      border: $input-bdr-focus;
+      color: $input-col-focus;
+      background: $input-bg-focus;
+    }
+  }
+
+  .form-bt {
+    text-align: right;
+  }
+}
+
+.bt-action {
+  padding: 10px;
+  background: $form-bt-bg;
+  color: $form-bt-col;
+  border: $form-bt-brd;
+  border-radius: 5px;
+  transition: background 0.2s ease-out;
+}
+
+.bt-action:hover {
+  background: $form-bt-bg-hover;
+}

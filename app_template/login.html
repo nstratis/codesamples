@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>AV Digital Media Ltd. | Sample App | Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="maximum-scale=2.0,initial-scale=1.0,width=device-width,height=device-height">
+  <meta name="description" content="AV Digital Media Ltd. sample application files for Vue and React">
+  <meta name="author" content="Nikolas Stratis">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="css/theme-default.css" media="screen">
+</head>
+<body>
+<div id="wrapper">
+  <div id="app-container">
+    <div id="login-panel" class="panel">
+      <header class="panel-hdr login">
+        <img class="logo" src="assets/logo.svg" width="200" height="25" alt="application logo" />
+      </header>
+      <div class="panel-stn">
+        <p>Enter your credentials below to login to the application</p>
+        <form>
+          <fieldset class="field-grp">
+            <div class="form-row">
+              <label>Username</label><input type="text" name="username" />
+            </div>
+            <div class="form-row">
+              <label>Password</label><input type="password" name="username" />
+            </div>
+            <div class="form-bt">
+              <button class="bt-action" type="submit">Login</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div id="alert-modal" class="modal-layer">
+      <div class="panel">
+        <header class="panel-hdr">
+          <h1>Login Error</h1>
+        </header>
+        <div class="panel-stn">
+          <p>Your credentials are invalid, please try again.</p>
+        </div>
+        <div class="panel-bt">
+          <button class="bt-action" type="submit">OK</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

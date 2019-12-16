@@ -1,0 +1,58 @@
+
+// COLOUR PALETTE
+$white: #ffffff;
+$black: #000000;
+$grey-200: #333;
+$grey-700: #ccc;
+
+$turquoise: #26c5d3;
+$turquoise-drk: #1da6b2;
+$accent: #7fe89d;
+
+// FONTS
+$default-font-size: 16px;
+$default-font-col: $white;
+$default-font-family: Helvetica, Arial, sans-serif;
+
+// THEME COLOURS
+$app-bg: $turquoise;
+$modal-bg: rgba(0,0,0,0.4);
+
+$panel-brd: 1px solid $white;
+$panel-bg: $white;
+$panel-header-bg: $turquoise;
+$panel-bg-login: $turquoise-drk;
+$panel-txt-col: $grey-200;
+$panel-txt-col-login: $white;
+
+$form-bt-bg: $turquoise;
+$form-bt-bg-hover: $accent;
+$form-bt-col: $white;
+$form-bt-brd: 1px solid $white;
+
+$input-bg: $white;
+$input-col: $grey-200;
+$input-bdr: 1px solid $grey-700;
+$input-bg-focus: $turquoise-drk;
+$input-col-focus: $white;
+$input-bdr-focus: 1px solid $white;
+
+$section-bg: $white;
+$footer-bg: $turquoise-drk;
+
+$icon-burger-bg: $white;
+$icon-burger-bg-hover: $accent;
+
+$menu-bg: $grey-700;
+$menu-bg-hover: $turquoise-drk;
+$menu-col: $white;
+
+$table-header-bg: $turquoise;
+$table-header-col: $white;
+
+$h1: $turquoise;
+$p: $grey-200;
+
+$icon-error-bg: #ff3737;
+$icon-success-bg: #15ca49;
+$icon-text-col: $white;

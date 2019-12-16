@@ -1,0 +1,70 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  // flex-basis: 300px;
+  width: 400px;
+  border: $panel-brd;
+  border-radius: 5px;
+  background: $panel-bg;
+  // box-shadow: 0px 1px 10px #fff;
+
+  .panel-hdr {
+    display: flex;
+    flex: 1;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: $panel-header-bg;
+
+    h1 {
+      font-size: 20px;
+      line-height: 40px;
+      padding-left: 10px;
+      font-weight: normal;
+    }
+  }
+
+  .panel-stn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: $panel-txt-col;
+  }
+
+  .panel-bt {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+.panel#login-panel {
+  background: $panel-bg-login;
+
+  .panel-hdr {
+    background: none;
+    height: 80px;
+    padding-top: 30px;
+  }
+
+  .panel-stn {
+    background: none;
+    color: $panel-txt-col-login;
+  }
+}
+
+@media only screen and (min-width:0px) and (max-width:319px) {}
+@media only screen and (min-width:0px) and (max-width:479px) {
+  .panel {
+    width: 100%;
+  }
+}
+@media only screen and (min-width:480px) and (max-width:639px) {}
+@media only screen and (min-width:480px) and (max-width:959px) {}
+@media only screen and (min-width:768px) and (max-width:959px) {}
+@media only screen and (min-width:960px) and (max-width:1023px) {}
+@media only screen and (min-width:1024px) and (max-width:1279px) {}
+@media only screen and (min-width:1280px) and (max-width:1480px) {}
+@media only screen and (min-width:1480px) { }
+@media only screen and (min-width:1720px) { }

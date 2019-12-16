@@ -1,0 +1,54 @@
+.grid {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-collapse:separate;
+  color: #333;
+  border: 1px solid $grey-700;
+  border-radius: 10px;
+  margin: 20px 0;
+  overflow: hidden;
+
+  .col {
+    display: table-cell;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+  }
+  .col:last-child {
+    border-right: none;
+  }
+
+  .grid-hdr {
+    display: table-header-group;
+    .col {
+      background: $table-header-bg;
+      color: $table-header-col;
+    }
+  }
+
+  .grid-tbl {
+    display: table-row-group;
+  }
+
+  .row {
+    display: table-row;
+  }
+
+}
+
+.icon-state {
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  &.error {
+    background: $icon-error-bg;
+    color: $icon-text-col;
+  }
+  &.success {
+    background: $icon-success-bg;
+    color: $icon-text-col;
+  }
+}

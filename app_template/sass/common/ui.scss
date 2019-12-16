@@ -1,0 +1,72 @@
+header.main {
+  display: flex;
+  flex: 0 0 auto;
+  height: 60px;
+  align-items: center;
+}
+
+section.main {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  background: $section-bg;
+}
+
+footer.main {
+  display: flex;
+  flex: 0 0 auto;
+  background: $footer-bg;
+  height: 30px;
+  font-size: 12px;
+  align-items: center;
+  span {
+    margin-left: 10px;
+  }
+}
+
+.app-inner-content {
+  display: flex;
+  flex: 1 100%;
+  overflow-y: auto;
+  .area-left {
+    width: 0px;
+    flex: none;
+    background: $menu-bg;
+  }
+
+  .area-main {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+}
+
+.app-inner-content.menu-open {
+  .area-left {
+    flex: 0 0 20%;
+  }
+
+  .area-main {
+    flex: 0 0 80%;
+  }
+}
+
+
+.icon-burger {
+  width: 30px;
+  margin-left: 20px;
+  .line {
+    height: 4px;
+    border-radius: 2px;
+    margin: 3px 0;
+    background: $icon-burger-bg;
+    transition: all 0.5s ease-out;
+  }
+}
+
+.icon-burger.active,
+.icon-burger:hover {
+  .line {
+    background: $icon-burger-bg-hover;
+  }
+}
