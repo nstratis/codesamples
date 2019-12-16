@@ -9,4 +9,4 @@ React, Redux, Vanilla JavaScript and Vue.
 
 ## Included Samples
 
-1. TODO - Update in progress..
+1. TODO - Update in progress, see previous revision for old sample code..

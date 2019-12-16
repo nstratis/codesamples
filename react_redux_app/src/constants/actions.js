@@ -1,0 +1,13 @@
+export const SHOW_ALERT_DIALOG = 'SHOW_ALERT_DIALOG';
+export const HIDE_ALERT_DIALOG = 'HIDE_ALERT_DIALOG';
+
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAILED = 'LOGIN_FAILED';
+export const LOGOUT_USER = 'LOGOUT_USER';
+
+export const SHOW_MENU = 'SHOW_MENU';
+export const HIDE_MENU = 'HIDE_MENU';
+
+export const RESET_ERROR_MESSAGE = 'RESET_ERROR_MESSAGE';
+
+export const EXECUTE_REQUEST = 'EXECUTE_REQUEST';

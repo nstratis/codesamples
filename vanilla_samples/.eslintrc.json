@@ -1,0 +1,39 @@
+{
+  "extends": "airbnb-base",
+  "env":{
+    "node":true,
+    "amd":true,
+    "es6":true
+  },
+  "globals":{
+    "window":true,
+    "browser":true,
+    "document":true,
+    "localStorage":true,
+    "webpack":true,
+    "console":true,
+    "describe":true,
+    "it":true,
+    "after":true,
+    "before":true,
+    "aim":true
+  },
+  "rules":{
+    "class-methods-use-this":0,
+    "indent":0,
+    "no-console":["error", {"allow":["log", "warn", "error", "info"]}],
+    "linebreak-style":["error", "windows"],
+    "func-names": ["error", "never"],
+    "no-tabs":0,
+    "space-before-function-paren": ["error", "never"],
+    "no-var":0,
+    "comma-dangle":["error", "never"],
+    "one-var":["error", "always"],
+    "prefer-rest-params":0,
+    "prefer-destructuring": ["error", {"object": false, "array": false}],
+    "no-nested-ternary": 0,
+    "no-underscore-dangle":0,
+    "one-var": ["error", "consecutive"],
+    "one-var-declaration-per-line":0
+  }
+}
