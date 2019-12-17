@@ -1,13 +1,13 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-import Button from './Button';
-import './ListItem.css';
+import PropTypes from 'prop-types';
+import Button from '../button/Button';
+import './CommentItem.css';
 
 /**
- * @function ListItem
- * @description The review item
+ * @function CommentItem
+ * @description A user comment to display
  */
-const ListItem = (props) => {
+const CommentItem = (props) => {
   const you = props.likes[0],
   users = props.likes[1];
   let str = '', other = '';
@@ -21,11 +21,11 @@ const ListItem = (props) => {
     str += `5 ${other} people like this`;
   }
   return (
-    <li key={props.i} className={props.className} data-id={props.i}>
-      <h2 className="revlst_title">{
+    <li key={props.i} className={props.classNames} data-id={props.i}>
+      <h2 className="review-list-title">{
         props.user
       }<span className="duration">{props.date}</span></h2>
-      <article className="msg revlst_message">{
+      <article className="list-message">{
         props.message
       }</article>
       <Button
@@ -33,8 +33,8 @@ const ListItem = (props) => {
         classNames={props.butClass}
         type="button"
         onClick={props.onLike}
-        i={props.i} />
-      <span className="revlst_likes">{
+        dataId={props.i} />
+      <span className="review-likes-num">{
         str
       }</span>
       {props.comObj}
@@ -42,10 +42,13 @@ const ListItem = (props) => {
   );
 };
 
-ListItem.propTypes = {
-  // i: PropTypes.string,
-  // className: PropTypes.string,
-  // onSend: PropTypes.func
+CommentItem.propTypes = {
+  i: PropTypes.number,
+  date: PropTypes.string,
+  message: PropTypes.string,
+  classNames: PropTypes.string,
+  butClass: PropTypes.string,
+  onLike: PropTypes.func
 };
 
-export default ListItem;
+export default CommentItem;

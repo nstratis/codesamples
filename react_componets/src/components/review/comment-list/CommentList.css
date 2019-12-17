@@ -1,0 +1,11 @@
+.comment-list-display {
+  position: relative;
+  list-style-type: none;
+  margin: 55px 0 0 125px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .comment-list-display {
+    margin: 35px 0 0 0px;
+  }
+}

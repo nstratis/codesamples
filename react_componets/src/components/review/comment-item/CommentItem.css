@@ -1,21 +1,27 @@
-
-.revlst_title {
+.review-list-title {
   color: #87c3ff;
   font-size: 16px;
 }
-.revlst_title .duration {
+
+.review-list-title .duration {
   color: #252525;
   margin-left: 12px;
   font-weight: normal;
 }
 
-.revlst_message {
+.list-message {
   position: relative;
-  margin: 35px 0 12px 0;
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+  margin: 35px 0 25px 0;
+  color: #252525;
+  border: 1px solid #edf1ee;
   background-color: #edf1ee;
+  border-radius: 10px;
 }
 
-.revlst_message::before {
+.list-message::before {
   width: 0px;
   height: 0px;
   background: none;
@@ -29,11 +35,14 @@
   border-right: none;
 }
 
-.rev_input {
-  position: relative;
-}
-
-.revlst_likes {
+.review-likes-num {
   margin-left: 12px;
   font-size: 14px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .review-likes-num {
+    display: block;
+    margin: 5px 0 0 0;
+  }
 }

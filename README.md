@@ -18,13 +18,14 @@ https://github.com/nstratis/codesamples/tree/master/react_redux_app
 Some additional React component examples which include:
 https://github.com/nstratis/codesamples/tree/master/react_componets
 
+    * Tab Display
+    This is a simple tab component to display the components below
     * Filtered Data Grid
     This example will fetch data, parse the filter list and display in a Grid
     format with the ability to filter the data.
     * Reviews and Comments
     This example provides a chat like display, with like buttons and comments and
     and add review display.
-    * ....
 
 3. Vanilla JavaScript Samples
 These are plain JavaScript sample, explanations and algorithms.

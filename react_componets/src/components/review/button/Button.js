@@ -9,14 +9,14 @@ import './Button.css';
  */
 const Button = (props) => (
   <button
-    data-id={props.i}
-    className={props.classNames}
+    data-id={props.dataId}
+    className={`action-bt ${props.classNames}`}
     type="button"
     onClick={props.onClick}>{props.label}</button>
 );
 
 Button.propTypes = {
-  i: PropTypes.number,
+  dataId: PropTypes.number,
   label: PropTypes.string,
   classNames: PropTypes.string,
   onClick: PropTypes.func

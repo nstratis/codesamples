@@ -1,0 +1,13 @@
+.tab {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 30px;
+  background: #ccc;
+  padding: 10px;
+}
+
+.tab.active,
+.tab:hover {
+  background: #000;
+  color: #fff;
+}

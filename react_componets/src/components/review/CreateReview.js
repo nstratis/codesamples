@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Button from './items/Button';
+import Button from './button/Button';
+import InputContainer from './input/InputContainer';
 import './CreateReview.css';
 
 /**
@@ -7,14 +8,33 @@ import './CreateReview.css';
  * @description A sample React JS Review Component
  */
 export default class Review extends Component {
+
+  state = {
+    value: ''
+  }
+
+  /**
+   * @function onChange
+   * @description Handles the onChange event for the message input
+   * @param {object} e - The event object
+   */
+  onChange = (e) => {
+    this.setState({ value: e.currentTarget.value });
+  }
+
   /**
    * @function onClick
    * @description Handle the click event for adding a new review
    * @param {object} e - The event object
    */
-  onClick(e) {
-    // Something with the value
-    alert('Dispatch to the application store and server to insert a new review record, and notify the message display component');
+  onClick = (e) => {
+    // TODO: The review data would be saved to a server...
+    alert(
+      `Dispatch to the application store and server to insert a new
+      review record, and notify the message display component:
+
+      ${this.state.value}`
+    );
   }
 
   /**
@@ -22,22 +42,21 @@ export default class Review extends Component {
    * @description Render the Review component
    */
   render() {
-    return (<div id="review-container">
-      <fieldset id="new-display" className="newrev">
-      <legend>WRITE YOUR OWN REVIEW</legend>
-      <div className="rev_input"><div className="msg_arrow"> </div>
-      <input
-        ref="reviewcomment"
-        className="msg newrev_message"
-        type="text" placeholder="Write a comment.." />
-      </div>
-      <Button
-        i="0"
-        label="LEAVE A REVIEW"
-        classNames="newrev_btn send_btn"
-        type="button"
-        onClick={this.onClick} />
-      </fieldset>
+    return (
+      <div id="review-container">
+        <fieldset id="new-display" className="new-review">
+          <legend>WRITE YOUR OWN REVIEW</legend>
+          <InputContainer
+            classNames="message-input new-review-message"
+            value={this.state.value}
+            onChange={this.onChange} />
+          <Button
+            dataId={0}
+            label="LEAVE A REVIEW"
+            classNames="send-bt new-review-bt"
+            type="button"
+            onClick={this.onClick} />
+        </fieldset>
      </div>
     );
   }

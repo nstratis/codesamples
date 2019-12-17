@@ -1,0 +1,17 @@
+.review-input-container {
+  position: relative;
+}
+
+.review-input-container::before {
+  width: 0px;
+  height: 0px;
+  background: none;
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 25px;
+  border-bottom: 0px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #edf1ee;
+  border-right: none;
+}

@@ -7,7 +7,7 @@ import './CommentList.css';
  * @description Comment List of elements for the display
  */
 const CommentList = (props) => (
-  <ul className="commuser">{props.coms}</ul>
+  <ul className="comment-list-display">{props.coms}</ul>
 );
 
 CommentList.propTypes = {

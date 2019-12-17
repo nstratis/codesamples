@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
-import Grid from '../components/grid/Grid';
-import MessageDisplay from '../components/review/MessageDisplay';
-import CreateReview from '../components/review/CreateReview';
+import Tabs from '../components/tabs/Tabs';
 
 /**
  * @class App
@@ -24,16 +21,7 @@ class App extends Component {
       <div id="wrapper">
         <div className="component-container">
           This page demonstrates some simple react components.
-
-          <h1>Grid</h1>
-          <div className="component-item">
-            <Grid />
-          </div>
-          <h1>Review Comments</h1>
-          <div className="component-item">
-            <MessageDisplay />
-            <CreateReview />
-          </div>
+          <Tabs />
         </div>
       </div>
     );
