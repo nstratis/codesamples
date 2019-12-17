@@ -1,55 +1,38 @@
-import { API_PATH } from '../constants';
 import { EXECUTE_REQUEST } from '../constants/actions';
+import { execute } from './fetch';
 
-const execute = (path, data) => {
-  const url = API_PATH + path + '.php';
-  const request = {
-    method: 'POST',
-    // mode: 'cors',
-    headers: {
-      'content-type':	'application/json; charset=UTF-8',
-      'x-requested-with': 'XMLHttpRequest',
-      'access-control-allow-methods': 'GET, POST',
-      // 'access-control-allow-methods': 'GET, POST, OPTIONS, PUT, DELETE',
-      'access-control-allow-origin': '*',
-      'access-control-allow-headers': 'x-requested-with, content-type'
-      // 'Accept': 'application/json, application/xml, text/plain, text/html, *.*'
-    }
-  };
-
-  request.body = JSON.stringify(data);
-  console.log(request);
-  return fetch(url, request)
-    .then(response => {
-      return response.json();
-    })
-    .then(data => {
-      console.log(data);
-      return data;
-    })
-    .catch(error => {
-      console.log(error);
-      return error;
-    });
-};
-
+/**
+ * @function api
+ * @description A middleware, executed when actions are dispatched.
+ * @param {Object} store - The redux store object reference
+ * @param {Function} next - The action dispatcher reference
+ * @param {Object} action - The current action handle for the request
+ */
 export default store => next => action => {
   console.log('API');
   // console.log(store, next, action, execute);
   const req = action[EXECUTE_REQUEST];
-  console.log(req);
-
-  const responseAction = {
-    type: action[EXECUTE_REQUEST].types[0]
-  };
-
+  if (req === undefined) {
+    return next(action);
+  }
+  let responseAction = {};
+  const successAction = action[EXECUTE_REQUEST].types[0],
+  failedAction = action[EXECUTE_REQUEST].types[1];
   return execute(req.path, req.data)
   .then(response => {
-    responseAction.data = response;
+    responseAction.payload = response;
     if (response.code === 200) {
-      responseAction.type = action[EXECUTE_REQUEST].types[0];
+      if (typeof successAction === 'function') {
+        responseAction = successAction(next);
+      } else {
+        responseAction.type = action[EXECUTE_REQUEST].types[0];
+      }
     } else if (response.code === 401) {
-      responseAction.type = action[EXECUTE_REQUEST].types[1];
+      if (typeof failedAction === 'function') {
+        responseAction = failedAction(next);
+      } else {
+        responseAction.type = action[EXECUTE_REQUEST].types[1];
+      }
     }
     return next(responseAction);
   });

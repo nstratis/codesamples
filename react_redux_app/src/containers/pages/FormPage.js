@@ -4,6 +4,10 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
+/**
+ * @class FormPage
+ * @description A page displaying a form component
+ */
 class FormPage extends Component {
   static propTypes = {
   }

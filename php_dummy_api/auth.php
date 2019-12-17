@@ -1,15 +1,17 @@
 <?php
 require_once('headers.php');
 
-
 /*
-	Insecure dummy api for testing the fetch request.
+	Insecure dummy api for testing the fetch request from the Apps.
 */
 
 define( 'ROOT', dirname( __FILE__ ) );
 require_once ROOT. '/chromephp/ChromePhp.php';
 
-if(!isset($HTTP_RAW_POST_DATA)){ $HTTP_RAW_POST_DATA = file_get_contents('php://input');  }
+if(!isset($HTTP_RAW_POST_DATA)){
+	$HTTP_RAW_POST_DATA = file_get_contents('php://input');
+}
+
 $decodeHTTP = urldecode($HTTP_RAW_POST_DATA);
 $headers = getallheaders();
 $query = array();

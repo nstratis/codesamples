@@ -5,6 +5,10 @@ import Button from '../ui/Button';
 import Logo from '../ui/Logo';
 import Input from '../form/Input';
 
+/**
+ * @class PanelLogin
+ * @description The login panel which is displayed on the login page.
+ */
 export default class PanelLogin extends Component {
   state = {
     username: 'bob',
@@ -18,16 +22,31 @@ export default class PanelLogin extends Component {
   static defaultProps = {
   }
 
+  /**
+   * @function handleClick
+   * @description  Handles the click event for the login button
+   * @param {Object} e - The event object
+   */
   handleClick = (e) => {
     this.props.validate(this.state.username, this.state.password);
   }
 
+  /**
+   * @function handleInput
+   * @description  Handles the onChange event for the form input
+   * given they are controlled components
+   * @param {Object} e - The event object
+   */
   handleInput = (e) => {
     const value = e.currentTarget.value,
     name = e.currentTarget.name;
     this.setState({ [name]: value });
   }
 
+  /**
+   * @function render
+   * @description Render the login panel component
+   */
   render() {
     return (<div id="login-panel" className="panel visible">
       <header className="panel-hdr login">

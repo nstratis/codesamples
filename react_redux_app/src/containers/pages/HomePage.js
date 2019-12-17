@@ -1,13 +1,15 @@
-/* eslint no-unused-vars:0 */
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 
+/**
+ * @class HomePage
+ * @description Simple Homepage component rendering some text
+ */
 class HomePage extends Component {
-  static propTypes = {
-  }
-
+  /**
+   * @function render
+   * @description Render the home page components
+   */
   render() {
     return (
       <>
@@ -20,11 +22,4 @@ class HomePage extends Component {
     );
   }
 }
-
-const mapStateToProps = (state, ownProps) => {
-  console.log(state, ownProps);
-  return {
-  };
-};
-
-export default connect(mapStateToProps, {})(HomePage);
+export default connect(null, null)(HomePage);

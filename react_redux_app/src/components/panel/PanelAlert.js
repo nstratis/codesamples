@@ -5,6 +5,10 @@ import PropTypes from 'prop-types';
 import Button from '../ui/Button';
 import { hideAlert } from '../../actions/alert';
 
+/**
+ * @class PanelAlert
+ * @description The alert panel for displaying alert notifications to the user
+ */
 class PanelAlert extends Component {
   static propTypes = {
     active: PropTypes.bool,
@@ -12,10 +16,19 @@ class PanelAlert extends Component {
     message: PropTypes.string
   }
 
+  /**
+   * @function handleClick
+   * @description  Handles the click event for the OK button
+   * @param {Object} e - The event object
+   */
   handleClick = (e) => {
     this.props.hideAlert();
   }
 
+  /**
+   * @function render
+   * @description Render the alert panel component
+   */
   render() {
     const { active, title, message } = this.props;
     if (!active) {

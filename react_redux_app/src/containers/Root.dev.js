@@ -9,42 +9,14 @@ import GridPage from './pages/GridPage';
 import FormPage from './pages/FormPage';
 import LoginPage from './pages/LoginPage';
 
-const Root = ({ store }) => {
-  const isLoggedIn = () => {
-    return store.getState().userLoggedIn;
-  };
-
-  const checkAuth = (history) => {
-    const path = history.location.pathname;
-    if (isLoggedIn()) {
-      switch(path) {
-        case '/':
-        return (<HomePage />);
-        case '/login':
-        return (<LoginPage />);
-        case '/grid':
-        return (<GridPage />);
-        case '/form':
-        return (<FormPage />);
-        default:
-        return (<HomePage />);
-      }
-    } else {
-      if (path !== '/login') {
-        window.location.pathname = '/login';
-      }
-      return (
-        <LoginPage />
-      );
-    }
-  };
-
+const Root = ({ store, history }) => {
+  // console.log(store, typeof history.push);
   return (<Provider store={store}>
     <App>
-      <Route exact path="/" render={checkAuth} />
-      <Route exact path="/login" render={checkAuth} />
-      <Route exact path="/grid" render={checkAuth} />
-      <Route exact path="/form" render={checkAuth} />
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/login" component={LoginPage} />
+      <Route exact path="/grid" component={GridPage} />
+      <Route exact path="/form" component={FormPage} />
     </App>
     <DevTools />
     </Provider>
