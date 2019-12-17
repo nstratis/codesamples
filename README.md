@@ -25,14 +25,16 @@ yarn start
 Some additional React component examples which include:
 https://github.com/nstratis/codesamples/tree/master/react_componets
 
-    * Tab Display
+    * __Tab Display__
     This is a simple tab component to display the components below
-    * Filtered Data Grid
+    * __Filtered Data Grid__
     This example will fetch data, parse the filter list and display in a Grid
     format with the ability to filter the data.
-    * Reviews and Comments
+    * __Reviews and Comments__
     This example provides a chat like display, with like buttons and comments and
     and add review display.
+    * __Sortable List Elements__
+    A list element display with a filter to sort
 
 To Run these examples
 ```
