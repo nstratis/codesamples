@@ -1,21 +1,37 @@
 table.products {
-  width: 100%;
+  width: auto;
   text-align: left;
+  overflow: hidden;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin: 40px;
+  border-radius: 5px;
 }
+
 table.products thead th {
   height: 30px;
   background-color: #3d3d3d;
   color: #fff;
-  padding: 10px;
+  padding: 20px 10px;
+  border-right: 1px solid #ccc;
 }
+
 table.products tbody td {
   padding: 10px;
   height: 30px;
+  border-right: 1px solid #ccc;
 }
+
+table.products thead th:last-child,
+table.products tbody td:last-child {
+  border-right: none;
+}
+
 table.products tbody td img {
   width: 100px;
   height: auto;
 }
+
 table.products td.code,
 table.products th.code {
   width: 100px;

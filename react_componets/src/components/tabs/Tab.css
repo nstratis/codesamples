@@ -3,11 +3,26 @@
   vertical-align: top;
   line-height: 30px;
   background: #ccc;
-  padding: 10px;
+  padding: 10px 30px;
+  transition: all 0.5s ease;
+  font-size: 14px;
+}
+
+.tab:first-child {
+  border-top-left-radius: 5px;
+}
+
+.tab:last-child {
+  border-top-right-radius: 5px;
 }
 
 .tab.active,
 .tab:hover {
   background: #000;
   color: #fff;
+  padding: 10px 50px;
+}
+
+.tab.active {
+  background: #666;
 }

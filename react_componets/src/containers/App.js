@@ -20,7 +20,10 @@ class App extends Component {
     return (
       <div id="wrapper">
         <div className="component-container">
-          This page demonstrates some simple react components.
+          <h1>Simple React Components</h1>
+          <p>This page demonstrates some simple react components, use the tab
+          display below to navigate to each component type.
+          View the source to see how these components are built.</p>
           <Tabs />
         </div>
       </div>

@@ -3,6 +3,7 @@ import Tab from './Tab';
 import Grid from '../grid/Grid';
 import MessageDisplay from '../review/MessageDisplay';
 import CreateReview from '../review/CreateReview';
+import SelectSortable from '../select-sortable/SelectSortable';
 import './Tabs.css';
 
 /**
@@ -11,10 +12,11 @@ import './Tabs.css';
  */
 export default class Tabs extends Component {
   state = {
-    active: 1,
+    active: 2,
     tabs: [
       { id: 0, label: 'Grid Component', component: <Grid /> },
-      { id: 1, label: 'Review Component', component: <><MessageDisplay /><CreateReview /></> }
+      { id: 1, label: 'Review Component', component: <><MessageDisplay /><CreateReview /></> },
+      { id: 2, label: 'Sortable Select', component: <SelectSortable /> }
     ]
   };
 

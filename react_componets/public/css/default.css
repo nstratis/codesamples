@@ -91,7 +91,9 @@ body {
 
 h1 {
   border-bottom: 1px solid #ccc;
-  margin-top: 20px;
+  margin: 20px 0;
+  line-height: 40px;
+  font-size: 26px;
 }
 
 .component-container {
