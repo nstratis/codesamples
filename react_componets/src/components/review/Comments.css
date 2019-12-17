@@ -1,0 +1,150 @@
+.send_btn {
+  width: 133px;
+  height: 50px;
+  background: #87c3ff;
+  border: none;
+  color: #fff;
+  margin-top: 12px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.msg {
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #edf1ee;
+  color: #252525;
+}
+
+.msg:focus {
+  border: 1px solid #87c3ff;
+}
+
+#message-display,
+#review-container {
+  position: relative;
+  margin: 35px 35px 0 35px;
+}
+
+#review-container {
+  margin-top: 75px;
+  margin-bottom: 35px;
+}
+
+.mncont,
+.newrev {
+  position: relative;
+}
+
+.newrev {
+  padding: 50px 0 0 0;
+  border: none;
+  border-top: 1px solid #edf1ee;
+  text-align: right;
+}
+.newrev legend {
+  width: 320px;
+  margin-left: calc(50% - 160px);
+  font-weight: bold;
+  text-align: center;
+  font-size: 21px;
+}
+.newrev .newrev_btn {
+  width: 206px;
+  margin-bottom: 35px;
+}
+
+.revlst,
+.commuser {
+  position: relative;
+  list-style-type: none;
+}
+
+.revlst_elem {
+  margin-bottom: 48px;
+}
+
+.commuser {
+  margin-left: 125px;
+  margin-top: 55px;
+}
+
+.comlst_write {
+  text-align: right;
+}
+
+.revlst_title {
+  color: #87c3ff;
+  font-size: 16px;
+}
+.revlst_title .duration {
+  color: #252525;
+  margin-left: 12px;
+  font-weight: normal;
+}
+
+.revlst_message {
+  position: relative;
+  margin: 35px 0 12px 0;
+  background-color: #edf1ee;
+}
+
+.revlst_message::before {
+  width: 0px;
+  height: 0px;
+  background: none;
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 25px;
+  border-bottom: 0px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #edf1ee;
+  border-right: none;
+}
+
+.rev_input {
+  position: relative;
+}
+
+.msg_arrow {
+  position: absolute;
+  /* background: url("../assets/comments/border_triang.png"); */
+  display: block;
+  width: 22px;
+  height: 21px;
+  top: -20px;
+  left: 25px;
+}
+
+.revlst_btn {
+  width: 78px;
+  height: 36px;
+  border: 1px solid #87c3ff;
+  background: #87c3ff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.commuser .revlst_btn {
+  border: 1px solid #a8d1fa;
+  background: #fff;
+  color: #87c3ff;
+}
+
+.revlst_likes {
+  margin-left: 12px;
+  font-size: 14px;
+}

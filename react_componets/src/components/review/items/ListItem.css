@@ -1,0 +1,39 @@
+
+.revlst_title {
+  color: #87c3ff;
+  font-size: 16px;
+}
+.revlst_title .duration {
+  color: #252525;
+  margin-left: 12px;
+  font-weight: normal;
+}
+
+.revlst_message {
+  position: relative;
+  margin: 35px 0 12px 0;
+  background-color: #edf1ee;
+}
+
+.revlst_message::before {
+  width: 0px;
+  height: 0px;
+  background: none;
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 25px;
+  border-bottom: 0px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #edf1ee;
+  border-right: none;
+}
+
+.rev_input {
+  position: relative;
+}
+
+.revlst_likes {
+  margin-left: 12px;
+  font-size: 14px;
+}

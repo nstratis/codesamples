@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Grid from '../components/grid/Grid';
+import MessageDisplay from '../components/review/MessageDisplay';
+import CreateReview from '../components/review/CreateReview';
 
 /**
  * @class App
@@ -26,6 +28,11 @@ class App extends Component {
           <h1>Grid</h1>
           <div className="component-item">
             <Grid />
+          </div>
+          <h1>Review Comments</h1>
+          <div className="component-item">
+            <MessageDisplay />
+            <CreateReview />
           </div>
         </div>
       </div>
