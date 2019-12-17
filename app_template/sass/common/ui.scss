@@ -1,7 +1,6 @@
 header.main {
   display: flex;
-  flex: 0 0 auto;
-  height: 60px;
+  flex: 0 0 60px;
   align-items: center;
 }
 
@@ -10,13 +9,13 @@ section.main {
   display: flex;
   flex: 1 1 auto;
   background: $section-bg;
+  overflow: hidden;
 }
 
 footer.main {
   display: flex;
-  flex: 0 0 auto;
+  flex: 0 0 30px;
   background: $footer-bg;
-  height: 30px;
   font-size: 12px;
   align-items: center;
   span {
@@ -27,7 +26,8 @@ footer.main {
 .app-inner-content {
   display: flex;
   flex: 1 100%;
-  overflow-y: auto;
+  height: 100%;
+  overflow: hidden;
   .area-left {
     width: 0px;
     flex: none;
@@ -37,7 +37,12 @@ footer.main {
   .area-main {
     flex: 0 0 100%;
     box-sizing: border-box;
-    padding: 30px;
+    height: 100%;
+    overflow-y: scroll;
+    .inner {
+      display: block;
+      padding: 30px;
+    }
   }
 }
 

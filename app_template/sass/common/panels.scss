@@ -1,12 +1,10 @@
 .panel {
   display: flex;
   flex-direction: column;
-  // flex-basis: 300px;
   width: 400px;
   border: $panel-brd;
   border-radius: 5px;
   background: $panel-bg;
-  // box-shadow: 0px 1px 10px #fff;
 
   .panel-hdr {
     display: flex;
@@ -58,6 +56,12 @@
 @media only screen and (min-width:0px) and (max-width:479px) {
   .panel {
     width: 100%;
+  }
+
+  .panel#login-panel {
+    display: block;
+    height: 100%;
+    border: none;
   }
 }
 @media only screen and (min-width:480px) and (max-width:639px) {}

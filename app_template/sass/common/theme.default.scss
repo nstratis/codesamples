@@ -18,6 +18,9 @@ $default-font-family: Helvetica, Arial, sans-serif;
 $app-bg: $turquoise;
 $modal-bg: rgba(0,0,0,0.4);
 
+$scrollbar-track-col: $turquoise-drk;
+$scrollbar-drag-col: $turquoise;
+
 $panel-brd: 1px solid $white;
 $panel-bg: $white;
 $panel-header-bg: $turquoise;
@@ -29,6 +32,9 @@ $form-bt-bg: $turquoise;
 $form-bt-bg-hover: $accent;
 $form-bt-col: $white;
 $form-bt-brd: 1px solid $white;
+
+$form-label-col: $white;
+$form-label-inline-col: $grey-200;
 
 $input-bg: $white;
 $input-col: $grey-200;

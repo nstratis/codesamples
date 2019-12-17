@@ -83,7 +83,9 @@ class App extends Component {
                 <Menu />
               </div>
               <div className="area-main">
-                {children}
+                <div className="inner">
+                  {children}
+                </div>
               </div>
             </div>
           </section>

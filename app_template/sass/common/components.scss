@@ -2,7 +2,7 @@
   width: 100%;
   display: table;
   table-layout: fixed;
-  border-collapse:separate;
+  border-collapse: separate;
   color: #333;
   border: 1px solid $grey-700;
   border-radius: 10px;
@@ -13,9 +13,16 @@
     display: table-cell;
     padding: 15px;
     border-right: 1px solid #ccc;
+    border-bottom: 1px solid #e1e1e1;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   .col:last-child {
     border-right: none;
+  }
+
+  .row:last-child .col {
+    border-bottom: none;
   }
 
   .grid-hdr {
@@ -32,6 +39,7 @@
 
   .row {
     display: table-row;
+    border-bottom: 1px solid $grey-700;
   }
 
 }

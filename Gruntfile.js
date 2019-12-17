@@ -58,7 +58,16 @@ module.exports = (grunt) => {
         }
       }
     };
-    tasks = ['sass:dist'];
+
+    // The repo will contain serveral app versions all requiring the same
+    // template CSS thus copy to each app folder to preserve the encapsulation.
+    config.copy = {
+      redux_app: {
+        src: 'app_template/css/theme-default.css',
+        dest: 'react_redux_app/public/css/theme-default.css'
+      }
+    };
+    tasks = ['sass:dist', 'copy'];
   }
 
   grunt.initConfig(config);
