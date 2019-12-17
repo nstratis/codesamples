@@ -14,6 +14,13 @@ This demonstrates simple application routing and a very basic page and
 user authentication mechanism and api communication.
 https://github.com/nstratis/codesamples/tree/master/react_redux_app
 
+To Run this example
+```
+cd react_redux_app
+yarn install
+yarn start
+```
+
 2. React Components
 Some additional React component examples which include:
 https://github.com/nstratis/codesamples/tree/master/react_componets
@@ -26,6 +33,13 @@ https://github.com/nstratis/codesamples/tree/master/react_componets
     * Reviews and Comments
     This example provides a chat like display, with like buttons and comments and
     and add review display.
+
+To Run these examples
+```
+cd react_components
+yarn install
+yarn start
+```
 
 3. Vanilla JavaScript Samples
 These are plain JavaScript sample, explanations and algorithms.
