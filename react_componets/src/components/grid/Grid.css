@@ -1,0 +1,32 @@
+table.products {
+  width: 100%;
+  text-align: left;
+}
+table.products thead th {
+  height: 30px;
+  background-color: #3d3d3d;
+  color: #fff;
+  padding: 10px;
+}
+table.products tbody td {
+  padding: 10px;
+  height: 30px;
+}
+table.products tbody td img {
+  width: 100px;
+  height: auto;
+}
+table.products td.code,
+table.products th.code {
+  width: 100px;
+  font-weight: bold;
+}
+
+.sorter label {
+  margin-right: 10px;
+}
+
+.sorter select {
+  padding: 10px;
+  font-size: 14px;
+}
