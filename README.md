@@ -12,14 +12,22 @@ React, Redux, Vanilla JavaScript and Vue.
 1. React/Redux Application Example
 This demonstrates simple application routing and a very basic page and
 user authentication mechanism and api communication.
+https://github.com/nstratis/codesamples/tree/master/react_redux_app
 
 2. React Components
 Some additional React component examples which include:
-  a. Filtered Data Grid
+https://github.com/nstratis/codesamples/tree/master/react_componets
+
+  1. Filtered Data Grid
   This example will fetch data, parse the filter list and display in a Grid
   format with the ability to filter the data.
-  b. ....
-  c. ....
+  2. ....
+  3. ....
 
 3. Vanilla JavaScript Samples
 These are plain JavaScript sample, explanations and algorithms.
+https://github.com/nstratis/codesamples/tree/master/vanilla_samples
+
+4. SASS Template
+An Example using SASS for CSS generation.
+https://github.com/nstratis/codesamples/tree/master/app_template
