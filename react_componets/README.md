@@ -4,7 +4,7 @@ Comment Display.
 
 To Run these examples
 ```
-cd react_components
+cd react_componets
 yarn install
 yarn start
 ```
