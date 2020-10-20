@@ -38,6 +38,24 @@ https://github.com/nstratis/codesamples/tree/master/react_componets
     and add review display.
     * __Sortable List Elements__
     A list element display with a filter to sort
+    LIVE DEMO: https://www.avdm.co.uk/demo_code/react_components/
+
+To Run these examples
+```
+cd react_components
+yarn install
+yarn start
+```
+
+
+3. React Games
+Some additional React component examples which include:
+https://github.com/nstratis/codesamples/tree/master/react_games
+
+    * __Tic Tac Toe__
+    How many times do I have to do this coding challenge, my version is better ;)
+    LIVE DEMO: https://www.avdm.co.uk/demo_code/tictactoe/
+
 
 To Run these examples
 ```
