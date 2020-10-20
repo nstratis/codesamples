@@ -38,7 +38,8 @@ https://github.com/nstratis/codesamples/tree/master/react_componets
     and add review display.
     * __Sortable List Elements__
     A list element display with a filter to sort
-    LIVE DEMO: https://www.avdm.co.uk/demo_code/react_components/
+
+__LIVE DEMO__: https://www.avdm.co.uk/demo_code/react_components/
 
 To Run these examples
 ```
@@ -54,8 +55,8 @@ https://github.com/nstratis/codesamples/tree/master/react_games
 
     * __Tic Tac Toe__
     How many times do I have to do this coding challenge, my version is better ;)
-    LIVE DEMO: https://www.avdm.co.uk/demo_code/tictactoe/
 
+__LIVE DEMO__: https://www.avdm.co.uk/demo_code/tictactoe/
 
 To Run these examples
 ```
