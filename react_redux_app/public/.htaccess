@@ -1,0 +1,19 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(js|ico|gif|jpg|png|css)$ index.html
+
+# Security: Don't allow browsing of directories
+Options -Indexes
+
+# Set the cache control for the required elements
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|svg|gif|html|htm|xml|txt|xsl|js|woff)$">
+Header set Cache-Control "max-age=31536050"
+</FilesMatch>
+
+# Use Gzip compression
+<IfModule mod_deflate.c>
+<filesMatch "\.(js|css|html|php|ico|svg|pdf|jpg|jpeg|png|gif|html|htm|xml|txt|xsl)$">
+SetOutputFilter DEFLATE
+</filesMatch>
+</IfModule>
