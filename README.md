@@ -12,20 +12,22 @@ React, Redux, Vanilla JavaScript and Vue.
 
 ## Included Samples
 
-1. React/Redux Application Example
-This demonstrates simple application routing and a very basic page and
-user authentication mechanism and api communication.
-https://github.com/nstratis/codesamples/tree/master/react_redux_app
+1. __React Games__ - Some additional React component examples which include:
+https://github.com/nstratis/codesamples/tree/master/react_games
 
-To Run this example
+    * __Tic Tac Toe__
+    How many times do I have to do this coding challenge, my version is better ;)
+
+__LIVE DEMO__: https://www.avdm.co.uk/demo_code/tictactoe/
+
+To Run these examples
 ```
-cd react_redux_app
+cd react_components
 yarn install
 yarn start
 ```
 
-2. React Components
-Some additional React component examples which include:
+2. React Components - Some additional React component examples which include:
 https://github.com/nstratis/codesamples/tree/master/react_componets
 
     * __Tab Display__
@@ -48,27 +50,22 @@ yarn install
 yarn start
 ```
 
+3. React/Redux Application Example
+This demonstrates simple application routing and a very basic page and
+user authentication mechanism and api communication.
+https://github.com/nstratis/codesamples/tree/master/react_redux_app
 
-3. React Games
-Some additional React component examples which include:
-https://github.com/nstratis/codesamples/tree/master/react_games
-
-    * __Tic Tac Toe__
-    How many times do I have to do this coding challenge, my version is better ;)
-
-__LIVE DEMO__: https://www.avdm.co.uk/demo_code/tictactoe/
-
-To Run these examples
+To Run this example
 ```
-cd react_components
+cd react_redux_app
 yarn install
 yarn start
 ```
 
-3. Vanilla JavaScript Samples
+4. Vanilla JavaScript Samples
 These are plain JavaScript sample, explanations and algorithms.
 https://github.com/nstratis/codesamples/tree/master/vanilla_samples
 
-4. SASS Template
+5. SASS Template
 An Example using SASS for CSS generation.
 https://github.com/nstratis/codesamples/tree/master/app_template
