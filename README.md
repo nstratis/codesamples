@@ -27,7 +27,7 @@ yarn install
 yarn start
 ```
 
-2. React Components - Some additional React component examples which include:
+2. __React Components__ - Some additional React component examples which include:
 https://github.com/nstratis/codesamples/tree/master/react_componets
 
     * __Tab Display__
@@ -50,9 +50,7 @@ yarn install
 yarn start
 ```
 
-3. React/Redux Application Example
-This demonstrates simple application routing and a very basic page and
-user authentication mechanism and api communication.
+3. __React/Redux Application Example__ - This demonstrates simple application routing and a very basic page and user authentication mechanism and api communication.
 https://github.com/nstratis/codesamples/tree/master/react_redux_app
 
 To Run this example
@@ -62,8 +60,7 @@ yarn install
 yarn start
 ```
 
-4. Vanilla JavaScript Samples
-These are plain JavaScript sample, explanations and algorithms.
+4. __Vanilla JavaScript Samples__ - These are plain JavaScript sample, explanations and algorithms.
 https://github.com/nstratis/codesamples/tree/master/vanilla_samples
 
 5. SASS Template
