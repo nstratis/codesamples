@@ -1,12 +1,12 @@
 ################################################################
-# AV Digital Media Ltd. Code Sample Repository
-*(c) AV Digital Media Ltd. All Rights Reserved.*
+# Impela Ltd. Code Sample Repository
+*(c) Impela Ltd. All Rights Reserved.*
 
-Website: https://www.avdm.co.uk
+Website: https://www.impela.co.uk
 
 ################################################################
 
-The is a sample, tutorial and code repository for AV Digital Media Ltd.
+The is a sample, tutorial and code repository for Impela Ltd.
 The code within this repository includes examples utilizing, HTML, CSS, SASS,
 React, Redux, Vanilla JavaScript and Vue.
 
@@ -18,7 +18,7 @@ https://github.com/nstratis/codesamples/tree/master/react_games
     * __Tic Tac Toe__
     How many times do I have to do this coding challenge, my version is better ;)
 
-__LIVE DEMO__: https://www.avdm.co.uk/demo_code/tictactoe/
+__LIVE DEMO__: https://www.impela.co.uk/demo_code/tictactoe/
 
 To Run these examples
 ```
@@ -41,7 +41,7 @@ https://github.com/nstratis/codesamples/tree/master/react_componets
     * __Sortable List Elements__
     A list element display with a filter to sort
 
-__LIVE DEMO__: https://www.avdm.co.uk/demo_code/react_components/
+__LIVE DEMO__: https://www.impela.co.uk/demo_code/react_components/
 
 To Run these examples
 ```
